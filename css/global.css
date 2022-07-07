@@ -1,0 +1,25 @@
+:root {
+  --preto: #141414;
+  --verde: #b6f829;
+  --cinza1: #f5f5f5;
+  --cinza2: #a3a3a3;
+  --cinza3: #525252;
+  --subtitulo: #e0e0e0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Fira Sans", Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
