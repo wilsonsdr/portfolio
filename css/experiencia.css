@@ -4,7 +4,7 @@
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 100px
+  gap: 100px;
 }
 
 .experiencia .subtitulo {
@@ -91,5 +91,10 @@
     width: initial;
     order: 1;
     text-align: left;
+  }
+}
+@media (max-width: 300px) {
+  .experiencia .subtitulo {
+    font-size: 2rem;
   }
 }

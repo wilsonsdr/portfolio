@@ -44,3 +44,12 @@
   }
 }
 
+@media (max-width: 300px) {
+  .introducao img {
+    width: 300px;
+  }
+  .introducao h1 {
+    font-size: 1.5rem;
+  }
+}
+

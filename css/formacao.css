@@ -124,3 +124,14 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 300px) {  
+  .cursos li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+  .formacao .subtitulo {
+    font-size: 2rem;
+  }
+}
