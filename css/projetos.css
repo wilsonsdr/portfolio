@@ -34,6 +34,7 @@
   object-fit: cover;
   height: 100%;
   border-radius: 7px;
+  object-position: top right;
 }
 
 @media (max-width: 819px) {
@@ -69,6 +70,18 @@
 
 @media (max-width: 700px) {
   .galeria {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 300px) {
+  .projetos .subtitulo {
+    font-size: 2rem;
   }
 }
