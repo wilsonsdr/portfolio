@@ -1,6 +1,6 @@
 #projetos {
   position: absolute;
-  top: -100px;
+  top: -120px;
 }
 
 .projetos {
@@ -57,7 +57,7 @@
 
 @media (max-width: 800px) {
   #projetos {
-    top: -140px;
+    top: -157px;
   }
   .projetos {
     grid-template-columns: 1fr;
@@ -82,6 +82,13 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 535px) {
+  #projetos {
+    top: -210px;
+  }
+}
+
 @media (max-width: 500px) {
   .galeria {
     grid-template-columns: 1fr;

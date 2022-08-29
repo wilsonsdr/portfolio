@@ -1,6 +1,6 @@
 #formacao {
   position: absolute;
-  top: -100px;
+  top: -120px;
 }
 
 .formacao {
@@ -125,7 +125,7 @@
 
 @media (max-width: 800px) {
   #formacao {
-    top: -140px;
+    top: -157px;
   }
   .formacao-container {
     grid-template-columns: 1fr;
@@ -146,6 +146,12 @@
   .idiomas h3::before {
     position: initial;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 535px) {
+  #formacao {
+    top: -210px;
   }
 }
 

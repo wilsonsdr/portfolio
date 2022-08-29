@@ -1,6 +1,6 @@
 #contato {
   position: absolute;
-  top: -100px;
+  top: -120px;
 }
 
 .footer {
@@ -47,6 +47,18 @@
   color: #fff;
 }
 
-.footer-social i:hover{
-  color: var(--verde)
+.footer-social i:hover {
+  color: var(--verde);
+}
+
+@media (max-width: 800px) {
+  #contato {
+    top: -157px;
+  }
+}
+
+@media (max-width: 535px) {
+  #contato {
+    top: -210px;
+  }
 }
