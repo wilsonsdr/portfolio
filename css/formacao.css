@@ -68,10 +68,6 @@
   margin-bottom: 20px;
 }
 
-.cursos {
-  margin-bottom: 60px;
-}
-
 .formacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -79,6 +75,10 @@
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
+}
+
+.cursos {
+  margin-bottom: 60px;
 }
 
 .cursos h3::before {
@@ -92,6 +92,18 @@
   top: -3px;
 }
 
+.cursos li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cursos span {
+  color: var(--verde);
+}
+
 .idiomas h3::before {
   display: block;
   content: "";
@@ -103,9 +115,12 @@
   top: -3px;
 }
 
-.cursos li {
-  display: flex;
+.idiomas li {
+  display: grid;
+  grid-template-columns: 1fr auto;
   justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 @media (max-width: 800px) {
@@ -131,6 +146,12 @@
   .idiomas h3::before {
     position: initial;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cursos li {
+    grid-template-columns: 1fr;
   }
 }
 
