@@ -26,7 +26,6 @@
 
 .item {
   display: flex;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
   cursor: pointer;
   border-radius: 7px;
   transition: 0.5s;
@@ -64,8 +63,8 @@
     gap: 40px;
   }
   .galeria {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(4, 300px);
+    overflow-x: auto;
   }
   .projetos .subtitulo {
     color: var(--preto);
@@ -77,23 +76,12 @@
   }
 }
 
-@media (max-width: 700px) {
-  .galeria {
-    gap: 20px;
-  }
-}
-
 @media (max-width: 535px) {
   #projetos {
     top: -210px;
   }
 }
 
-@media (max-width: 500px) {
-  .galeria {
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 300px) {
   .projetos .subtitulo {
     font-size: 2rem;
