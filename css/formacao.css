@@ -71,7 +71,7 @@
 .formacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8f8f8f;
+  color: var(--cinza2);
   text-transform: uppercase;
   margin-bottom: 30px;
   position: relative;
@@ -86,7 +86,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background: url(/img/cursos.svg) no-repeat center center;
+  background: url("../img/cursos.svg") no-repeat center center;
   position: absolute;
   left: -36px;
   top: -3px;
@@ -109,7 +109,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background: url(/img/idiomas.svg) no-repeat center center;
+  background: url("../img/idiomas.svg") no-repeat center center;
   position: absolute;
   left: -36px;
   top: -3px;
