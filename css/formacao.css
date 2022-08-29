@@ -1,6 +1,12 @@
+#formacao {
+  position: absolute;
+  top: -100px;
+}
+
 .formacao {
   background-color: var(--preto);
   color: #fff;
+  position: relative;
 }
 
 .formacao-container {
@@ -103,6 +109,9 @@
 }
 
 @media (max-width: 800px) {
+  #formacao {
+    top: -140px;
+  }
   .formacao-container {
     grid-template-columns: 1fr;
     gap: 40px;

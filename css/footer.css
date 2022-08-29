@@ -1,5 +1,11 @@
+#contato {
+  position: absolute;
+  top: -100px;
+}
+
 .footer {
   background-color: var(--preto);
+  position: relative;
 }
 
 .footer-container {

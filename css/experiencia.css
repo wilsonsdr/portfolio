@@ -1,3 +1,8 @@
+#experiencia {
+  position: absolute;
+  top: -100px;
+}
+
 .experiencia {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -5,6 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 100px;
+  position: relative;
 }
 
 .experiencia .subtitulo {
@@ -70,6 +76,9 @@
 }
 
 @media (max-width: 800px) {
+  #experiencia {
+    top: -140px;
+  }
   .experiencia {
     grid-template-columns: 1fr;
     gap: 40px;

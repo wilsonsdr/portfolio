@@ -1,3 +1,7 @@
+.conteudo-principal {
+  padding-top: 158px;
+}
+
 .introducao {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -21,7 +25,7 @@
 
 @media (max-width: 1000px) {
   .introducao h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -35,6 +39,12 @@
   }
 }
 
+@media (max-width: 535px) {
+  .conteudo-principal {
+    padding-top: 212px;
+  }
+}
+
 @media (max-width: 500px) {
   .introducao {
     grid-template-columns: 1fr;
@@ -44,12 +54,21 @@
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 305px) {
+  .conteudo-principal {
+    padding-top: 265px;
+  }
   .introducao img {
     width: 300px;
   }
   .introducao h1 {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 260px) {
+  .conteudo-principal {
+    padding-top: 318px;
   }
 }
 

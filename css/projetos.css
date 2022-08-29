@@ -1,3 +1,8 @@
+#projetos {
+  position: absolute;
+  top: -100px;
+}
+
 .projetos {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -5,6 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   gap: 100px;
+  position: relative;
 }
 
 .projetos .subtitulo {
@@ -50,6 +56,9 @@
 }
 
 @media (max-width: 800px) {
+  #projetos {
+    top: -140px;
+  }
   .projetos {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -73,13 +82,11 @@
     gap: 20px;
   }
 }
-
 @media (max-width: 500px) {
   .galeria {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 300px) {
   .projetos .subtitulo {
     font-size: 2rem;
