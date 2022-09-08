@@ -2,10 +2,10 @@
 
 # Descrição do projeto
 
-Este é o meu portfólio, em que estará em constante atualização conforme eu for adquirindo novos conhecimentos e experiências, e realizando novos projetos e cursos.
+- Este é o meu portfólio, em que estará em constante atualização conforme eu for adquirindo novos conhecimentos e experiências, e realizando novos projetos e cursos.
 
-Antes de partir para os códigos, criei a User Interface no [Figma](https://www.figma.com/file/wDZiDjzwjoWwd1pVtiOhhk/Portf%C3%B3lio?node-id=0%3A1) de como ficaria o projeto. 
+- Antes de partir para os códigos, criei a User Interface no [Figma](https://www.figma.com/file/wDZiDjzwjoWwd1pVtiOhhk/Portf%C3%B3lio?node-id=0%3A1) de como ficaria o projeto. 
 
-Para conhecer o projeto final, [clique aqui](https://wilsonsdr.github.io/portfolio/).
+- Para conhecer o projeto final, [clique aqui](https://wilsonsdr.github.io/portfolio/).
 
 
