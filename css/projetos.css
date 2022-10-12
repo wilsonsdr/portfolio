@@ -21,21 +21,33 @@
 .galeria {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-height: 320px;
+  max-height: 550px;
   gap: 20px;
   overflow-y: scroll;
 }
 
-.item {
+.projeto {
   display: flex;
   cursor: pointer;
+  position: relative;
+  max-height: 220px;
 }
 
-.item img {
+.titulo-projeto {
+  position: absolute;
+  color: var(--preto);
+  padding: 10px;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  font-size: 0.75rem;
+}
+
+.projeto img {
   object-fit: cover;
   height: 100%;
-  object-position: top right;
-  border-radius: 4px;
+  object-position: center right;
+  border-top-right-radius: 4px;
 }
 
 @media (max-width: 1020px) {
