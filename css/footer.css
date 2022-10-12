@@ -1,5 +1,10 @@
+#contato {
+  position: absolute;
+}
+
 .footer {
   background-color: var(--preto);
+  position: relative;
 }
 
 .footer-container {
@@ -9,7 +14,6 @@
   margin: 0 auto;
   padding: 88px 20px;
   align-items: center;
-  justify-items: center;
 }
 
 .footer-texto {
