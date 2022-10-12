@@ -37,6 +37,10 @@
     justify-content: center;
     flex-direction: column;
     gap: 40px;
+    padding: 30px 0;
+  }
+  .header-menu {
+    margin-right: 0;
   }
   .header-menu a {
     background-color: var(--preto);
