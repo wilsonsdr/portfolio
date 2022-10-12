@@ -21,25 +21,27 @@
 .galeria {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-height: 320px;
   gap: 20px;
+  overflow-y: scroll;
 }
 
 .item {
   display: flex;
   cursor: pointer;
-  border-radius: 7px;
-  transition: 0.5s;
-}
-
-.item:hover {
-  transform: scale(1.1);
 }
 
 .item img {
   object-fit: cover;
   height: 100%;
-  border-radius: 7px;
   object-position: top right;
+  border-radius: 4px;
+}
+
+@media (max-width: 1020px) {
+  .galeria {
+    max-height: 390px;
+  }
 }
 
 @media (max-width: 819px) {
@@ -63,7 +65,7 @@
     gap: 40px;
   }
   .galeria {
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(6, 300px);
     overflow-x: auto;
   }
   .projetos .subtitulo {
