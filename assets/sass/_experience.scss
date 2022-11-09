@@ -1,0 +1,128 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+  position: relative;
+
+  #experiencia {
+    position: absolute;
+    top: -120px;
+  }
+
+  .subtitulo {
+    color: $subtitulo;
+  }
+
+  .experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    margin-bottom: 60px;
+    max-width: 40ch;
+    color: $cinza3;
+
+    strong {
+      color: $preto;
+    }
+  }
+
+  .empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 30px;
+    background-color: darken($cinza1, 2%);
+    margin-bottom: 20px;
+    position: relative;
+    gap: 10px;
+    border-left: 5px solid transparent;
+
+    &:hover {
+      border-left: 5px solid $destaque;
+    }
+
+    .empresa-ano {
+      font-size: 0.875rem;
+      position: absolute;
+      top: 31px;
+      left: -300px;
+      color: $cinza3;
+      width: 280px;
+      text-align: right;
+    }
+
+    .empresa-titulo {
+      font-size: 1.125rem;
+      line-height: 1.1;
+      font-weight: bold;
+    }
+
+    .empresa-cargo {
+      color: $preto;
+    }
+
+    .empresa-texto {
+      font-size: 0.875rem;
+      color: $cinza3;
+      line-height: 1.4;
+
+      li {
+        margin-bottom: 10px;
+        list-style: inside;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .experiencia {
+    .empresa {
+      .empresa-ano {
+        position: initial;
+        width: initial;
+        order: 1;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    #experiencia {
+      top: -157px;
+    }
+
+    .subtitulo {
+      color: $preto;
+    }
+
+    .experiencia-texto {
+      font-size: 1.25rem;
+    }
+
+    .empresa:hover {
+      border-left: 5px solid transparent;
+    }
+  }
+}
+
+@media (max-width: 535px) {
+  .experiencia {
+    #experiencia {
+      top: -210px;
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .experiencia {
+    .subtitulo {
+      font-size: 2rem;
+    }
+  }
+}
