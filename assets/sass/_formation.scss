@@ -62,8 +62,12 @@
     }
 
     .formacao-extra {
-      .cursos {
+      .extra {
         margin-bottom: 60px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
 
         h3 {
           font-size: 0.875rem;
@@ -75,54 +79,37 @@
 
           &::before {
             display: block;
-            content: "";
             width: 24px;
             height: 24px;
-            background: url("../img/cursos.svg") no-repeat center center;
             position: absolute;
             left: -36px;
             top: -3px;
           }
+        }
+
+        .habilidades::before {
+          content: url(../img/habilidades.svg);
+        }
+
+        .cursos::before {
+          content: url(../img/cursos.svg);
+        }
+
+        .idiomas::before {
+          content: url(../img/idiomas.svg);
         }
 
         li {
           display: grid;
           grid-template-columns: 1fr auto;
-          justify-content: space-between;
-          gap: 10px;
+          align-items: center;
+          gap: 40px;
           margin-top: 10px;
 
           span {
             color: $destaque;
+            text-align: right;
           }
-        }
-      }
-
-      .idiomas {
-        h3 {
-          font-size: 0.875rem;
-          line-height: 1.4;
-          color: $cinza2;
-          text-transform: uppercase;
-          margin-bottom: 30px;
-          position: relative;
-
-          &::before {
-            display: block;
-            content: "";
-            width: 24px;
-            height: 24px;
-            background: url("../img/idiomas.svg") no-repeat center center;
-            position: absolute;
-            left: -36px;
-            top: -3px;
-          }
-        }
-
-        ul {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
         }
       }
     }
@@ -149,8 +136,7 @@
       }
 
       .formacao-extra {
-        .cursos,
-        .idiomas {
+        .extra {
           h3 {
             &::before {
               position: initial;
@@ -175,9 +161,15 @@
   .formacao {
     .formacao-container {
       .formacao-extra {
-        .cursos {
+        .extra {
           li {
             grid-template-columns: 1fr;
+            gap: 5px;
+            margin-top: 20px;
+
+            span {
+              text-align: left;
+            }
           }
         }
       }
