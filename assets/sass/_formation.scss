@@ -177,6 +177,14 @@
   }
 }
 
+@media (max-width: 320px) {
+  .formacao {
+    #formacao {
+      top: -280px;
+    }
+  }
+}
+
 @media (max-width: 300px) {
   .formacao {
     .subtitulo {
@@ -184,3 +192,12 @@
     }
   }
 }
+
+@media (max-width: 280px) {
+  .formacao {
+    #formacao {
+      top: -320px;
+    }
+  }
+}
+

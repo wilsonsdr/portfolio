@@ -108,6 +108,14 @@
   }
 }
 
+@media (max-width: 320px) {
+  .projetos {
+    #projetos {
+      top: -280px;
+    }
+  }
+}
+
 @media (max-width: 300px) {
   .projetos {
     .subtitulo {
@@ -122,6 +130,14 @@
           max-width: 225px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .projetos {
+    #projetos {
+      top: -320px;
     }
   }
 }

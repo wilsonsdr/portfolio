@@ -94,7 +94,7 @@
     gap: 40px;
 
     #experiencia {
-      top: -157px;
+      top: -178px;
     }
 
     .subtitulo {
@@ -119,10 +119,26 @@
   }
 }
 
+@media (max-width: 320px) {
+  .experiencia {
+    #experiencia {
+      top: -280px;
+    }
+  }
+}
+
 @media (max-width: 300px) {
   .experiencia {
     .subtitulo {
       font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 280px) {
+  .experiencia {
+    #experiencia {
+      top: -320px;
     }
   }
 }
