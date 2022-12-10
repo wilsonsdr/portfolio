@@ -1,10 +1,7 @@
 //#region arrays
 const en = {
   header: ["Experience", "Education", "Projects", "Contact"],
-  introduction: [
-    "Front End Developer & UX/UI Designer",
-    "Located in São Paulo",
-  ],
+  introduction: ["Front End Developer & UX/UI Designer", "Located in São Paulo"],
   experience: {
     about:
       ["My name is Wilson, I'm an ambitious young man, looking to improve myself daily, developing small projects using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. I aim to specialize and deepen my understanding in the <strong>Web Development</strong> area."],
@@ -35,10 +32,11 @@ const en = {
     skills: ["Skills", "Database Management", "Extra", "Git Version Control", "S.O Linux","Agile Methodology"],
     languages: ["Languages", "English", "Advanced", "Spanish", "Basic"]
   },
+  projectDescription: ["Landing Page with pizzeria design, but in reality it is an anonymous tip hotline <span>against domestic violence</span>", "Customized bike shop and insurance", "Guessing game, where the program <span>chooses a random number and</span>we try  to guess", "Currency, temperature and measurement converter", "Movie catalog, where the user can add <span>and remove movies</span>", "Super Trunfo game, which cards are <span>randomly drawn, and we will battle</span>against the program"],
   footer: [
     "I am available for new projects at the moment. Contact me so we can talk",
     "Copyright ©2022. Developed by Wilson Souto dos Reis",
-  ],
+  ]
 };
 
 const pt = {
@@ -169,7 +167,19 @@ const idiomas = () => {
 //#endregion
 
 //#region projects
-const projects = () => document.querySelectorAll(".subtitulo")[2].innerHTML = en.header[2];
+const projects = () => {
+  const subtitulo = document.querySelectorAll(".subtitulo")[2].innerHTML = en.header[2];
+  const descricaoProjeto = document.querySelectorAll(".descricao-projeto");
+  const descricaoLink = document.querySelectorAll(".descricao-link");
+
+  for(let i = 0; i < descricaoProjeto.length; i++) {
+    descricaoProjeto[i].innerHTML = en.projectDescription[i];
+  }
+
+  for(let i = 0; i < descricaoLink.length; i++) {
+    descricaoLink[i].textContent = "See Project";
+  }
+}
 //#endregion
 
 //#region footer

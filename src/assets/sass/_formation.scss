@@ -123,7 +123,6 @@
 
       .subtitulo {
         color: $cinza1;
-        max-width: 100%;
       }
 
       .formacao-extra {
@@ -156,14 +155,6 @@
           }
         }
       }
-    }
-  }
-}
-
-@media (max-width: 300px) {
-  .formacao {
-    .subtitulo {
-      font-size: 2rem;
     }
   }
 }
