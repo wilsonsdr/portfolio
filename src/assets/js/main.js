@@ -188,3 +188,17 @@ const footer = () => {
     const footerCopy = document.querySelector(".footer-copy").innerHTML = en.footer[1];
 }
 //#endregion
+
+let contadorArrow = 0;
+const seta = document.querySelector(".arrow").addEventListener("click", arrow);
+function arrow() {
+  contadorArrow++
+  const primeiroProjeto = document.querySelectorAll(".projeto")[0].style.marginTop = "-180px"
+  const segundoProjeto = document.querySelectorAll(".projeto")[1].style.marginTop = "-180px"
+  const rotacionarArrow = document.querySelector(".arrow").classList.toggle("ativo");
+
+  if(contadorArrow % 2 == 0) {
+    const primeiroProjeto = document.querySelectorAll(".projeto")[0].style.marginTop = "initial"
+    const segundoProjeto = document.querySelectorAll(".projeto")[1].style.marginTop = "initial";
+  }
+}
