@@ -25,8 +25,10 @@
     display: inline-block;
     color: $subtitulo;
     transition: 1s;
+  }
 
-    &.ativo {
+  @if max-width !=800px {
+    i.ativo {
       rotate: 180deg;
     }
   }
@@ -143,11 +145,18 @@
 
     .galeria {
       grid-template-columns: repeat(6, 310px);
+      max-width: 700px;
       overflow: hidden;
 
       .projeto {
         &:hover .descricao-container {
-          font-size: 0.99rem;
+          font-size: 0.86rem;
+          width: 310px;
+        }
+
+        img {
+          max-width: 310px;
+          max-height: 220px;
         }
       }
     }

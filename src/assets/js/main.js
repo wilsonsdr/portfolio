@@ -278,29 +278,53 @@ const rodape = () => {
 //#region galeria slide
 let contador = 0;
 const slide = document.querySelector(".slide").addEventListener("click", function() {
-  
   contador++
 
-  const rotacionarSlide = document.querySelector(".slide").classList.toggle("ativo");
+  const mediaQuery = window.matchMedia("(min-width: 801px)") 
+
+    if(mediaQuery.matches) {
+
+    const rotacionarSlide = document.querySelector(".slide").classList.toggle("ativo");
+    
+    let arr = [0, 1]
   
-  let arr = [0, 1]
-
-  for(let i = 0; i < arr.length; i++) {
-    const projeto = document.querySelectorAll(".projeto")[i].style.marginTop = "-180px"
-  }
-
-  if(contador == 2) {
-    contador = 0
     for(let i = 0; i < arr.length; i++) {
-      const projeto = document.querySelectorAll(".projeto")[i].style.marginTop = "initial"
+      const projeto = document.querySelectorAll(".projeto")[i].style.marginTop = "-180px"
     }
+  
+    if(contador == 2) {
+      contador = 0
+      for(let i = 0; i < arr.length; i++) {
+        const projeto = document.querySelectorAll(".projeto")[i].style.marginTop = "initial"
+      }
   }
-
-  const mediaQuery = window.matchMedia("(max:width: 800px)")
-
-  if(mediaQuery.matches) {
+  } else {
+    
+    let arr = [0, 1, 2, 3, 4, 5]
+  
     for(let i = 0; i < arr.length; i++) {
-      const projeto = document.querySelectorAll(".projeto")[i].style.marginLeft = "-180px"
+      const projeto = document.querySelectorAll(".projeto")[i].style.marginLeft = "-260px"
+    }
+  
+    if(contador == 2) {
+      for(let i = 0; i < arr.length; i++) {
+        const projeto = document.querySelectorAll(".projeto")[i].style.marginLeft = "-590px"
+      }
+    } else if (contador == 3) {
+      for(let i = 0; i < arr.length; i++) {
+        const projeto = document.querySelectorAll(".projeto")[i].style.marginLeft = "-930px"
+      }
+    } else if (contador == 4) {
+      const rotacionarSlide = document.querySelector(".slide").style.rotate = "90deg";
+      for(let i = 0; i < arr.length; i++) {
+        const projeto = document.querySelectorAll(".projeto")[i].style.marginLeft = "-1260px"
+      }
+    } else if (contador == 5) {
+      contador = 0;
+      const rotacionarSlide = document.querySelector(".slide").style.rotate = "270deg";
+      for(let i = 0; i < arr.length; i++) {
+        const projeto = document.querySelectorAll(".projeto")[i].style.marginLeft = "initial"
+      }
     }
   }
 })
