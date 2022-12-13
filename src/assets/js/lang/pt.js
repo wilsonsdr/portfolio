@@ -1,6 +1,6 @@
 export const pt = {
   id: ["experiencia", "formacao", "projetos", "contato"],
-  cabecalho: ["Experiência", "Formação", "Projetos", "Contato"],
+  cabecalho: ["Experiência", "Formação", "Projetos", "Contato", `Idioma <i class="fa-solid fa-angle-down"></i>`],
   introducao: ["Desenvolvedor Front End & UX/UI Designer", "Localizado em São Paulo"],
   experiencia: {
     sobre:

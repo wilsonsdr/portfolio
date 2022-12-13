@@ -35,6 +35,8 @@
 
 @media (max-width: 800px) {
   .conteudo-principal {
+    padding-top: 180px;
+
     .introducao {
       grid-template-columns: 1fr 1fr;
       gap: 40px;
@@ -46,7 +48,7 @@
   }
 }
 
-@media (max-width: 555px) {
+@media (max-width: 586px) {
   .conteudo-principal {
     padding-top: 212px;
   }
@@ -64,7 +66,7 @@
   }
 }
 
-@media (max-width: 305px) {
+@media (max-width: 334px) {
   .conteudo-principal {
     padding-top: 265px;
 
@@ -80,7 +82,7 @@
   }
 }
 
-@media (max-width: 280px) {
+@media (max-width: 291px) {
   .conteudo-principal {
     padding-top: 318px;
   }

@@ -1,5 +1,5 @@
 export const en = {
-    cabecalho: ["Experience", "Education", "Projects", "Contact"],
+    cabecalho: ["Experience", "Education", "Projects", "Contact", `Language <i class="fa-solid fa-angle-down"></i>`],
     introducao: ["Front End Developer & UX/UI Designer", "Located in São Paulo"],
     experiencia: {
       sobre:

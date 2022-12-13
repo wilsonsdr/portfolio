@@ -12,7 +12,6 @@
     max-width: 5ch;
   }
 
-
   .galeria-container {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -138,9 +137,13 @@
       color: $preto;
     }
 
+    i {
+      rotate: 270deg;
+    }
+
     .galeria {
-      grid-template-columns: repeat(6, 340px);
-      overflow-x: scroll;
+      grid-template-columns: repeat(6, 310px);
+      overflow: hidden;
 
       .projeto {
         &:hover .descricao-container {

@@ -12,6 +12,7 @@
   nav {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: $cinza1;
 
     .header-menu {
@@ -19,16 +20,13 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-right: 20px;
 
       a {
         font-size: 1.125rem;
         text-decoration: none;
         line-height: 1.3;
-        padding: 10px 20px;
         color: $cinza1;
-        display: block;
+        padding: 10px 20px;
 
         &:hover {
           color: $destaque;
@@ -36,17 +34,66 @@
       }
     }
 
-    .mudar-idioma {
+    .idioma-container {
       display: flex;
-      flex-direction: row;
       align-items: center;
+      flex-direction: column;
+      justify-content: center;
       cursor: pointer;
-      position: relative;
-      color: $cinza1;
-      gap: 5px;
 
-      img {
-        border-radius: 10%;
+      p {
+        font-size: 1.125rem;
+        padding-left: 20px;
+        background-color: $preto;
+        color: $cinza1;
+        padding: 12px 16px;
+        display: inline-block;
+        border-radius: 4px;
+      }
+
+      .idioma-menu {
+        display: none;
+
+        &.ativo {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          background-color: #fff;
+          border: 1px solid #f8f8f8;
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          width: 109px;
+          height: 80px;
+          color: $preto;
+          bottom: -36px;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+
+        .idioma {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          width: 100%;
+          height: 100%;
+
+          &:hover {
+            background-color: $cinza1;
+          }
+
+          img {
+            border-radius: 12%;
+          }
+
+          input[type=checkbox] {
+            display: none;
+            position: absolute;
+            left: 0;
+          }
+        }
       }
     }
   }
@@ -64,8 +111,13 @@
     padding: 30px;
 
     nav {
+      .idioma-container {
+        display: none;
+      }
+
       .header-menu {
         margin-right: 0;
+        gap: 20px;
 
         a {
           background-color: $preto;
@@ -74,16 +126,6 @@
           &:hover {
             color: $destaque;
           }
-        }
-      }
-
-      .mudar-idioma {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-        .idioma {
-          display: none;
         }
       }
     }
