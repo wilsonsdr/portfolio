@@ -22,6 +22,23 @@ html {
   scroll-padding-top: 122px;
 }
 
+::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $subtitulo;
+  border-radius: 100vw;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+}
+
 img {
   max-width: 100%;
   height: auto;
