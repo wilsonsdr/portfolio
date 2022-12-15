@@ -19,12 +19,17 @@
     gap: 20px;
   }
 
-  i {
+  .projeto-btn {
     font-size: 40px;
     cursor: pointer;
     display: inline-block;
     color: $subtitulo;
-    transition: 1s;
+    border: none;
+    background-color: transparent;
+
+    i {
+      transition: 1s;
+    }
   }
 
   @if max-width !=800px {

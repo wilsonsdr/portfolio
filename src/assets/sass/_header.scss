@@ -39,16 +39,15 @@
       align-items: center;
       flex-direction: row;
       justify-content: center;
-      cursor: pointer;
 
-      p {
+      .idioma-btn {
         font-size: 1.125rem;
-        padding-left: 20px;
         background-color: $preto;
         color: $cinza1;
         padding: 12px 16px;
-        display: inline-block;
         border-radius: 4px;
+        cursor: pointer;
+        border: none;
       }
 
       .idioma-menu {
@@ -79,6 +78,7 @@
           gap: 10px;
           width: 100%;
           height: 100%;
+          cursor: pointer;
 
           &:hover {
             background-color: $cinza1;

@@ -19,8 +19,10 @@ const selecionarIdioma = document.querySelector(".idioma-container").addEventLis
 const validarPt = document.querySelector(".pt").addEventListener("click", function() {
   
   let checarPt = document.querySelectorAll("input")[0].checked = true;
+  console.log(checarPt)
   
   valor = document.querySelectorAll("input")[0].value;
+  console.log(valor)
 
   checarPt = true ? document.querySelectorAll("input")[1].checked = false : console.log(valor);
 
@@ -28,9 +30,12 @@ const validarPt = document.querySelector(".pt").addEventListener("click", functi
 })
 
 const validarEn = document.querySelector(".en").addEventListener("click", function() {
+  
   let checarEn = document.querySelectorAll("input")[1].checked = true;
+  console.log(checarEn)
   
   valor = document.querySelectorAll("input")[1].value;
+  console.log(valor)
 
   checarEn = true ? document.querySelectorAll("input")[0].checked = false : console.log(valor);
 
@@ -44,12 +49,12 @@ const cabecalho = () => {
   const links = document.querySelector(".header-menu").querySelectorAll("li");
 
   if(valor == "en") {
-   document.querySelector(".idioma-texto").innerHTML = en.cabecalho[4]
+   document.querySelector(".idioma-btn").innerHTML = en.cabecalho[4]
     for (let i = 0; i < links.length; i++) {
       links[i].innerHTML = `<a href="#${pt.id[i]}">${en.cabecalho[i]}</a>`;
     }
   } else {
-    document.querySelector(".idioma-texto").innerHTML = pt.cabecalho[4]
+    document.querySelector(".idioma-btn").innerHTML = pt.cabecalho[4]
     for (let i = 0; i < links.length; i++) {
       links[i].innerHTML = `<a href="#${pt.id[i]}">${pt.cabecalho[i]}</a>`;
     };
@@ -60,7 +65,7 @@ const cabecalho = () => {
 //#region introducao
 const introducao = () => {
  
-  const mudarHeader = document.querySelector(".introducao").getElementsByTagName("div")[0];
+  const mudarHeader = document.querySelector(".sobre")
   
   if (valor == "en") {
     mudarHeader.innerHTML = 

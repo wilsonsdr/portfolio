@@ -1,7 +1,7 @@
 export const pt = {
   id: ["experiencia", "formacao", "projetos", "contato"],
   cabecalho: ["Experiência", "Formação", "Projetos", "Contato", `Idioma <i class="fa-solid fa-angle-down"></i>`],
-  introducao: ["Desenvolvedor Front End & UX/UI Designer", "Localizado em São Paulo"],
+  introducao: ["Desenvolvedor <br> Front End & <br> UX/UI Designer", "Localizado em São Paulo"],
   experiencia: {
     sobre:
       ["Meu nome é Wilson, sou um jovem ambicioso, buscando me aperfeiçoar diariamente, desenvolvendo pequenos projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. Tenho como objetivo me especializar e aprofundar meu entendimento na área de <strong>Desenvolvimento Web</strong>.</p>"],
