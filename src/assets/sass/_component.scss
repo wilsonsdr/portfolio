@@ -5,23 +5,17 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 820px) {
+  .subtitulo {
+    font-size: 7.2rem !important;
+  }
+}
+
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem !important;
     text-transform: capitalize !important;
     max-width: initial !important;
-  }
-}
-
-@media (max-width: 820px) {
-  .subtitulo {
-    font-size: 7.5rem !important;
-  }
-}
-
-@media (max-width: 800px) {
-  .subtitulo {
-    font-size: 3rem !important;
   }
 }
 
