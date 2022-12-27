@@ -3,7 +3,7 @@ export const en = {
     introducao: ["Front End Developer & UX/UI Designer", "Located in São Paulo"],
     experiencia: {
       sobre:
-        ["My name is Wilson, I'm an ambitious young man, looking to improve myself daily, developing small projects using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>. I aim to specialize and deepen my understanding in the <strong>Web Development</strong> area."],
+        ["My name is Wilson, I'm an ambitious young man, looking to improve myself daily, developing  projects using <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>. I aim to specialize and deepen my understanding in the <strong>Web Development</strong> area."],
       primeiraExperiencia: {
         ano: ["October 2021 - Present"],
         cargo: ["Future Club Intern"],
