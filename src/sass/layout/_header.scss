@@ -20,18 +20,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-
-      a {
-        font-size: 1.125rem;
-        text-decoration: none;
-        line-height: 1.3;
-        color: $cinza1;
-        padding: 10px 20px;
-
-        &:hover {
-          color: $destaque;
-        }
-      }
+      @include links;
     }
 
     .idioma-container {
@@ -41,33 +30,14 @@
       justify-content: center;
 
       .idioma-btn {
-        font-size: 1.125rem;
-        background-color: $preto;
-        color: $cinza1;
-        padding: 12px 16px;
-        border-radius: 4px;
-        cursor: pointer;
-        border: none;
+        @include btn;
       }
 
       .idioma-menu {
         display: none;
 
         &.ativo {
-          position: absolute;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          background-color: #fff;
-          border: 1px solid #f8f8f8;
-          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-          width: 109px;
-          height: 80px;
-          color: $preto;
-          bottom: -36px;
-          border-bottom-left-radius: 4px;
-          border-bottom-right-radius: 4px;
+          @include dropdown;
         }
 
         .idioma {

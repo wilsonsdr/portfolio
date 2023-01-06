@@ -1,0 +1,20 @@
+// utils
+@import "./utils/variables";
+@import "./utils/mixins";
+
+// base
+@import "./base/reset";
+@import "./base/typography";
+
+// components
+@import "./components/buttons";
+@import "./components/dropdown";
+@import "./components/scrollbar";
+
+// layout 
+@import "./layout/header";
+@import "./layout/experience";
+@import "./layout/main";
+@import "./layout/formation";
+@import "./layout/projects";
+@import "./layout/footer";

@@ -13,10 +13,7 @@
   }
 
   .experiencia-texto {
-    font-size: 1.5rem;
-    line-height: 1.33;
-    margin-bottom: 60px;
-    max-width: 40ch;
+    @include texto;
     color: $cinza3;
 
     strong {
