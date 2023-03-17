@@ -1,4 +1,4 @@
-![Capa-portfolio](https://user-images.githubusercontent.com/81364355/187260979-f0c64272-c361-48c2-bc27-07472a3bcd80.jpg)
+![Capa-portfolio](https://user-images.githubusercontent.com/81364355/226065278-5419e286-47d3-44ca-b8ab-aef509239713.png)
 
 # Descrição do projeto
 
