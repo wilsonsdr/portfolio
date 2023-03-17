@@ -1,9 +1,9 @@
 export const en = {
     cabecalho: ["Experience", "Education", "Projects", "Contact", `Language <i class="fa-solid fa-angle-down"></i>`],
-    introducao: ["Front End Developer & UX/UI Designer", "Located in São Paulo"],
+    introducao: ["Back-end <br> Developer", "Located in São Paulo"],
     experiencia: {
       sobre:
-        ["My name is Wilson, I'm an ambitious young man, looking to improve myself daily, developing  projects using <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>. I aim to specialize and deepen my understanding in the <strong>Web Development</strong> area."],
+        ["My name is Wilson, I am hard worker, I seek to improve myself every day, developing projects using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong> C#</strong>. My goal is to keep growing and developing myself in the field of <strong>Software Development</strong>, with a specific focus on programming languages ​​such as <strong>C#</strong> and <strong>Java</strong>.</strong>"],
       primeiraExperiencia: {
         ano: ["October 2021 - Present"],
         cargo: ["Future Club Intern"],

@@ -1,10 +1,10 @@
 export const pt = {
   id: ["experiencia", "formacao", "projetos", "contato"],
   cabecalho: ["Experiência", "Formação", "Projetos", "Contato", `Idioma <i class="fa-solid fa-angle-down"></i>`],
-  introducao: ["Desenvolvedor <br> Front End & <br> UX/UI Designer", "Localizado em São Paulo"],
+  introducao: ["Desenvolvedor <br> Back-end", "Localizado em São Paulo"],
   experiencia: {
     sobre:
-      ["Meu nome é Wilson, sou um jovem ambicioso, buscando me aperfeiçoar diariamente, desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Tenho como objetivo me especializar e aprofundar meu entendimento na área de <strong>Desenvolvimento Web</strong>.</p>"],
+      ["Meu nome é Wilson, sou um jovem esforçado, buscando me aperfeiçoar diariamente, desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>C#</strong>. Meu objetivo é continuar crescendo e me desenvolvendo na área de <strong>Desenvolvimento de Software</strong>, com um foco específico em linguagens de programação como <strong>C#</strong> e <strong>Java</strong>."],
     primeiraExperiencia: {
       ano: ["Agosto 2021 - Atualmente"],
       cargo: ["Estagiário Future Club"],
