@@ -5,7 +5,7 @@ export const en = {
       sobre:
         ["My name is Wilson, I am hard worker, I seek to improve myself every day, developing projects using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong> C#</strong>. My goal is to keep growing and developing myself in the field of <strong>Software Development</strong>, with a specific focus on programming languages ​​such as <strong>C#</strong> and <strong>Java</strong>.</strong>"],
       primeiraExperiencia: {
-        ano: ["October 2021 - Present"],
+        ano: ["October 2021 - Dezember 2022"],
         cargo: ["Future Club Intern"],
         funcao: [
           "Storage Technical Bootcamp, exclusive content training for partner Ecosystem, learn to articulate and demonstrate the benefits of IBM storage solutions",

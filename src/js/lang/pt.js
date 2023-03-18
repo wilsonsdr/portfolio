@@ -6,7 +6,7 @@ export const pt = {
     sobre:
       ["Meu nome é Wilson, sou um jovem esforçado, buscando me aperfeiçoar diariamente, desenvolvendo projetos utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>C#</strong>. Meu objetivo é continuar crescendo e me desenvolvendo na área de <strong>Desenvolvimento de Software</strong>, com um foco específico em linguagens de programação como <strong>C#</strong> e <strong>Java</strong>."],
     primeiraExperiencia: {
-      ano: ["Agosto 2021 - Atualmente"],
+      ano: ["Agosto 2021 - Dezembro 2022"],
       cargo: ["Estagiário Future Club"],
       funcao: [
         "Storage Technical Bootcamp, treinamento com contéudo exclusivo para o Ecosistema de parceiros, aprender a articular e demonstrar os benefícios das soluções de armazenamento da IBM",

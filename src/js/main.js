@@ -196,7 +196,7 @@ const habilidades = () => {
       `
     <li>Front-End<span>HTML, CSS, Bootstrap, Tailwind, SASS, JavaScript</span></li>
     <li>Back-End <span>C#, Java, Python, PHP</span></li>
-    <li>${en.formacao.habilidades[1]}<span>MariaDB, MongoDB</span></li>
+    <li>${en.formacao.habilidades[1]}<span>MySQL, MongoDB</span></li>
     <li>${en.formacao.habilidades[2]}<span>${en.formacao.habilidades[3]}, ${en.formacao.habilidades[4]}, ${en.formacao.habilidades[5]} </span></li>
     `
   } else {
@@ -208,7 +208,7 @@ const habilidades = () => {
       `
     <li>Front-End<span>HTML, CSS, Bootstrap, Tailwind, SASS, JavaScript</span></li>
     <li>Back-End<span>C#, Java, Python, PHP</span></li>
-    <li>${pt.formacao.habilidades[1]}<span>MariaDB, MongoDB</span></li>
+    <li>${pt.formacao.habilidades[1]}<span>MySQL, MongoDB</span></li>
     <li>${pt.formacao.habilidades[2]}<span>${pt.formacao.habilidades[3]}, ${pt.formacao.habilidades[4]}, ${pt.formacao.habilidades[5]} </span></li>
     `
   }
