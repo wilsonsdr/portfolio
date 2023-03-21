@@ -10,8 +10,8 @@ export const en = {
         funcao: [
           "Storage Technical Bootcamp, exclusive content training for partner Ecosystem, learn to articulate and demonstrate the benefits of IBM storage solutions",
           "QQSU Project, aimed to work together with the IBM team and the Paypow Startup. Together we use Cognos Analytics to generate insights through the dashboard for the Food Court",
-          "Stardust Project, aimed to develop a game and to entertain the IBM's Cloud Executive, with a maximum deadline of 3 weeks",
-          "Deep Learning in the company's tools and services; IBM Cloud, IBM Z, LinuxONE, IBM Storage",
+          "Stardust Project, aimed to develop a game and to entertain the IBM's Cloud Executives, with a maximum deadline of 3 weeks",
+          "Deep Learning in the company's tools and services, such as IBM Cloud, IBM Z, LinuxONE, IBM Storage",
         ],
       },
       segundaExperiencia: {

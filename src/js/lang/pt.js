@@ -12,7 +12,7 @@ export const pt = {
         "Storage Technical Bootcamp, treinamento com contéudo exclusivo para o Ecosistema de parceiros, aprender a articular e demonstrar os benefícios das soluções de armazenamento da IBM",
         "Projeto QQSU, teve como objetivo trabalhar em conjunto com o time IBM e a Startup Paypow. Juntos nós utilizamos o Cognos Analytics para gerar insights através do dashboard para o Food Court",
         "Projeto Stardust, teve como objetivo desenvolver um jogo e entreter os Executivos de Cloud da IBM, com o prazo máximo de 3 semanas",
-        "Deep Learning nas ferramentas e serviços da empresa; IBM Cloud, IBM Z, LinuxONE, IBM Storage",
+        "Deep Learning nas ferramentas e serviços da empresa, como IBM Cloud, IBM Z, LinuxONE, IBM Storage",
       ],
     },
     segundaExperiencia: {
