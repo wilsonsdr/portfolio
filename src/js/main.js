@@ -194,10 +194,10 @@ const habilidades = () => {
       document.querySelector(".habilidades-lista");
     habilidadesLista.innerHTML =
       `
-    <li>Front-End<span>HTML, CSS, Bootstrap, Tailwind, SASS, JavaScript</span></li>
-    <li>Back-End<span>C#, .NET, Java, Python, PHP</span></li>
+    <li>Front-End<span>HTML, CSS, Bootstrap, SASS, JavaScript, React, Tailwind, TypeScript</span></li>
+    <li>Back-End<span>.NET</span></li>
     <li>${en.formacao.habilidades[1]}<span>MySQL, MongoDB</span></li>
-    <li>${en.formacao.habilidades[2]}<span>${en.formacao.habilidades[3]}, ${en.formacao.habilidades[4]}, ${en.formacao.habilidades[5]} </span></li>
+    <li>${en.formacao.habilidades[2]}<span>${en.formacao.habilidades[3]}, ${en.formacao.habilidades[4]}, ${en.formacao.habilidades[5]}</span></li>
     `
   } else {
     const habilidades =
@@ -206,8 +206,8 @@ const habilidades = () => {
       document.querySelector(".habilidades-lista");
     habilidadesLista.innerHTML =
       `
-    <li>Front-End<span>HTML, CSS, Bootstrap, Tailwind, SASS, JavaScript</span></li>
-    <li>Back-End<span>C#, .NET, Java, Python, PHP</span></li>
+    <li>Front-End<span>HTML, CSS, Bootstrap, SASS, JavaScript, React, Tailwind, TypeScript</span></li>
+    <li>Back-End<span>.NET</span></li>
     <li>${pt.formacao.habilidades[1]}<span>MySQL, MongoDB</span></li>
     <li>${pt.formacao.habilidades[2]}<span>${pt.formacao.habilidades[3]}, ${pt.formacao.habilidades[4]}, ${pt.formacao.habilidades[5]} </span></li>
     `
