@@ -9,6 +9,7 @@ import {
   faBookOpen,
   faLanguage,
 } from "@fortawesome/free-solid-svg-icons";
+import Carousel from "@/components/slider/Carousel";
 
 interface MainProps {
   activeSection: string;
@@ -63,7 +64,7 @@ export default function Main({ activeSection }: MainProps) {
             desenvolvimento de toda a interface visual e experiência do usuário,
             de um jogo para os Executivos de Cloud da IBM."
           ></ExperienceItem>
-          <hr className="border-neutral-800" />
+          <span className="w-full h-[0.40px] rounded-full bg-neutral-800" />
           <ExperienceItem
             company="RTM"
             role="Estagiário de Telecomunicações"
@@ -217,9 +218,10 @@ export default function Main({ activeSection }: MainProps) {
         </Container>
       )}
       {activeSection == "projetos" && (
-        <section>
-          <h1>Projetos</h1>
-        </section>
+        <Container>
+          <Title>Projetos</Title>
+          <Carousel />
+        </Container>
       )}
       {activeSection == "contato" && (
         <section>
