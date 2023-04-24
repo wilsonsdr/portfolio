@@ -82,7 +82,6 @@ export default function Header() {
             </a>
           </li>
         </ul>
-
         <Main activeSection={activeSection} />
       </nav>
     </div>
