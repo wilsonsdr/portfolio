@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite'
+      }
     },
     fontFamily: {
       'nav-menu': ['Indie Flower', 'cursive'],

@@ -207,6 +207,13 @@ export default function Main({ activeSection }: MainProps) {
               </nav>
             </div>
           </div>
+          <img
+            className="fixed top-20 right-10 w-[150px] animate-spin-slow max-md:hidden"
+            width={150}
+            height={150}
+            src="/img/react.svg"
+            alt="react"
+          />
         </Container>
       )}
       {activeSection == "projetos" && (
