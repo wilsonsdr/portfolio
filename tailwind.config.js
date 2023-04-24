@@ -10,6 +10,8 @@ module.exports = {
     },
     fontFamily: {
       'nav-menu': ['Indie Flower', 'cursive'],
+      'title': ['Bungee', 'cursive'],
+      'p': ['Poltawski Nowy', 'serif'],
     }
   },
   plugins: [],
