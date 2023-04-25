@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "@/components/slider/Carousel";
 import { Typewriter } from "react-simple-typewriter";
+import Image from "next/image";
 
 interface MainProps {
   activeSection: string;
@@ -39,16 +40,16 @@ export default function Main({ activeSection }: MainProps) {
             Além do trabalho com tecnologia, há interesse em áreas como
             filosofia, música, xadrez e não dispensa um bom café.
           </P>
-          <img
+          <Image
             className="fixed bottom-[-50px] left-[100px] max-lg:hidden"
-            src="/img/guitar.svg"
+            src="/Image/guitar.svg"
             alt="guitar"
             width={100}
             height={100}
           />
-          <img
+          <Image
             className="fixed top-[20px] right-[-10px] max-lg:hidden"
-            src="/img/coffe.svg"
+            src="/Image/coffe.svg"
             alt="coffe"
             width={350}
             height={350}
@@ -95,9 +96,9 @@ export default function Main({ activeSection }: MainProps) {
             contratados pelos clientes (VPNs, Acesso Discado, Provedores,
             Internet, entre outros)."
           ></ExperienceItem>
-          <img
+          <Image
             className="fixed right-10 top-10 max-md:hidden"
-            src="/img/name-tag.svg"
+            src="/Image/name-tag.svg"
             alt="name-tag"
             width={230}
             height={200}
@@ -225,11 +226,11 @@ export default function Main({ activeSection }: MainProps) {
               </nav>
             </div>
           </div>
-          <img
+          <Image
             className="fixed top-10 right-10 w-[150px] animate-spin-slow max-md:hidden"
             width={150}
             height={150}
-            src="/img/react.svg"
+            src="/Image/react.svg"
             alt="react"
           />
         </Container>
@@ -238,51 +239,51 @@ export default function Main({ activeSection }: MainProps) {
         <Container>
           <Title>Projetos</Title>
           <Carousel />
-          <img
+          <Image
             className="fixed top-[70px] right-[400px] max-lg:hidden z-[-40]"
-            src="/img/cloud.svg"
+            src="/Image/cloud.svg"
             alt="cloud"
             width={100}
             height={100}
           />
-          <img
+          <Image
             className="fixed top-[10px] right-[300px] max-lg:hidden z-[-40]"
-            src="/img/cloud.svg"
+            src="/Image/cloud.svg"
             alt="cloud"
             width={100}
             height={100}
           />
-          <img
+          <Image
             className="fixed top-[10px] right-[220px] max-lg:hidden z-[-40] animate-pulse"
-            src="/img/star.svg"
+            src="/Image/star.svg"
             alt="star"
             width={70}
             height={70}
           />
-          <img
+          <Image
             className="fixed top-[50px] right-[250px] max-lg:hidden z-[-40] animate-pulse"
-            src="/img/star.svg"
+            src="/Image/star.svg"
             alt="star"
             width={50}
             height={50}
           />
-          <img
+          <Image
             className="fixed top-[40px] right-[100px] max-lg:hidden z-[-40] animate-pulse"
-            src="/img/star.svg"
+            src="/Image/star.svg"
             alt="star"
             width={50}
             height={50}
           />
-          <img
+          <Image
             className="fixed top-[60px] right-[150px] max-lg:hidden z-[-40]"
-            src="/img/spaceship.svg"
+            src="/Image/spaceship.svg"
             alt="spaceship"
             width={100}
             height={100}
           />
-          <img
+          <Image
             className="fixed bottom-[-50px] right-[100px] max-lg:hidden z-[-40]"
-            src="/img/rocket.svg"
+            src="/Image/rocket.svg"
             alt="rocket"
             width={200}
             height={200}
@@ -320,9 +321,9 @@ export default function Main({ activeSection }: MainProps) {
               </li>
             </ul>
           </nav>
-          <img
+          <Image
             className="fixed top-[140px] right-[140px] max-lg:hidden z-[-40]"
-            src="/img/paper-airplane.svg"
+            src="/Image/paper-airplane.svg"
             alt="paper-airplane"
             width={100}
             height={100}
