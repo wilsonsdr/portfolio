@@ -4,7 +4,11 @@ import Container from "@/components/elements/Container";
 import P from "@/components/elements/P";
 import ExperienceItem from "@/components/experience/ExperienceItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithubSquare,
+  faLinkedin,
+  faSquareGooglePlus,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faComputerMouse,
   faBookOpen,
@@ -288,6 +292,41 @@ export default function Main({ activeSection }: MainProps) {
       {activeSection == "contato" && (
         <Container>
           <Title>Contato</Title>
+          <P>
+            Caso você também seja apaixonado por tecnologia ou tenha interesse
+            em algumas das minhas outras áreas de interesse, sinta-se à vontade
+            para me enviar uma mensagem através das minhas redes sociais. Será
+            um prazer trocar conhecimentos e ideias!
+          </P>
+          <nav>
+            <ul className="flex items-center gap-4 text-3xl animate-bounce mt-4">
+              <li>
+                <a href="https://github.com/wilsonsdr" target="_blank">
+                  <FontAwesomeIcon icon={faGithubSquare} />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/wilsonsdr/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:wilsonsdr@gmail.com">
+                  <FontAwesomeIcon icon={faSquareGooglePlus} />
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <img
+            className="fixed top-[140px] right-[140px] max-lg:hidden z-[-40]"
+            src="/img/paper-airplane.svg"
+            alt="paper-airplane"
+            width={100}
+            height={100}
+          />
         </Container>
       )}
     </div>
