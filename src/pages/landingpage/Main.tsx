@@ -4,12 +4,14 @@ import Container from "@/components/elements/Container";
 import P from "@/components/elements/P";
 import ExperienceItem from "@/components/experience/ExperienceItem";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faComputerMouse,
   faBookOpen,
   faLanguage,
 } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "@/components/slider/Carousel";
+import { Typewriter } from "react-simple-typewriter";
 
 interface MainProps {
   activeSection: string;
@@ -47,6 +49,17 @@ export default function Main({ activeSection }: MainProps) {
             width={350}
             height={350}
           />
+          <span className="absolute bottom-[-140px] right-[40px] text-xl font-typewriter max-lg:hidden">
+            <Typewriter
+              words={["Eat", "Sleep", "Code", "Repeat!"]}
+              loop={999}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </span>
         </Container>
       )}
       {activeSection == "experiencia" && (
@@ -209,7 +222,7 @@ export default function Main({ activeSection }: MainProps) {
             </div>
           </div>
           <img
-            className="fixed top-20 right-10 w-[150px] animate-spin-slow max-md:hidden"
+            className="fixed top-10 right-10 w-[150px] animate-spin-slow max-md:hidden"
             width={150}
             height={150}
             src="/img/react.svg"
@@ -221,12 +234,61 @@ export default function Main({ activeSection }: MainProps) {
         <Container>
           <Title>Projetos</Title>
           <Carousel />
+          <img
+            className="fixed top-[70px] right-[400px] max-lg:hidden z-[-40]"
+            src="/img/cloud.svg"
+            alt="cloud"
+            width={100}
+            height={100}
+          />
+          <img
+            className="fixed top-[10px] right-[300px] max-lg:hidden z-[-40]"
+            src="/img/cloud.svg"
+            alt="cloud"
+            width={100}
+            height={100}
+          />
+          <img
+            className="fixed top-[10px] right-[220px] max-lg:hidden z-[-40] animate-pulse"
+            src="/img/star.svg"
+            alt="star"
+            width={70}
+            height={70}
+          />
+          <img
+            className="fixed top-[50px] right-[250px] max-lg:hidden z-[-40] animate-pulse"
+            src="/img/star.svg"
+            alt="star"
+            width={50}
+            height={50}
+          />
+          <img
+            className="fixed top-[40px] right-[100px] max-lg:hidden z-[-40] animate-pulse"
+            src="/img/star.svg"
+            alt="star"
+            width={50}
+            height={50}
+          />
+          <img
+            className="fixed top-[60px] right-[150px] max-lg:hidden z-[-40]"
+            src="/img/spaceship.svg"
+            alt="spaceship"
+            width={100}
+            height={100}
+          />
+          <img
+            className="fixed bottom-[-50px] right-[100px] max-lg:hidden z-[-40]"
+            src="/img/rocket.svg"
+            alt="rocket"
+            width={200}
+            height={200}
+          />
         </Container>
       )}
       {activeSection == "contato" && (
-        <section>
-          <h1>Contato</h1>
-        </section>
+        <Container>
+          <Title>Contato</Title>
+        </Container>
       )}
     </div>
   );

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ocr-a-extended');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poltawski+Nowy&display=swap');
 @tailwind base;
 @tailwind components;
@@ -36,3 +37,11 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .slick-next {
+    right: -70px;
+  }
+}
+
+
