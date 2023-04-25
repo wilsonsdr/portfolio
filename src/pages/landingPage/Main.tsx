@@ -17,6 +17,7 @@ import {
 import Carousel from "@/components/slider/Carousel";
 import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
+import Lista from "@/components/elements/Lista";
 
 interface MainProps {
   activeSection: string;
@@ -117,15 +118,15 @@ export default function Main({ activeSection }: MainProps) {
             <span className="absolute w-32 top-[-15px] text-center bg-[#333] rounded-full p-1 max-sm:transform max-sm:translate-x-[-66px]">
               Tecnólogo
             </span>
-            <h1 className="mt-3 font-bold">
+            <h2 className="mt-3 font-bold">
               Análise e Desenvolvimento de Sistemas
-            </h1>
+            </h2>
             <p>FIAP - 2022</p>
           </div>
           <div className="flex flex-1 flex-col gap-10 mt-10">
             <div className="flex flex-wrap flex-col gap-4">
               <div className="relative flex items-center text-xl max-sm:justify-center">
-                <h1 className="font-title">Habilidades</h1>
+                <h2 className="font-title">Habilidades</h2>
                 <FontAwesomeIcon
                   className="absolute left-[-40px] top-1/2 w-5 transform -translate-y-1/2 text-neutral-600 max-sm:hidden"
                   icon={faComputerMouse}
@@ -133,40 +134,28 @@ export default function Main({ activeSection }: MainProps) {
               </div>
               <nav>
                 <ul className="flex flex-col gap-2 text-neutral-400">
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:hidden">
-                    Front
-                    <span>JavaScript, React, Tailwind, TypeScript</span>
-                  </li>
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:hidden">
-                    Back
-                    <span>.NET</span>
-                  </li>
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:hidden">
-                    Banco de dados
-                    <span>MySQL, MongoDB</span>
-                  </li>
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:hidden">
-                    Complementar
-                    <span>Git, Servidor Linux, Metodologia Agile</span>
-                  </li>
-                  <li className="font-p text-base hover:bg-[#222] hover:text-white transition duration-500 sm:hidden">
-                    JavaScript, React, Tailwind, TypeScript
-                  </li>
-                  <li className="font-p text-base hover:bg-[#222] hover:text-white transition duration-500 sm:hidden">
-                    .NET
-                  </li>
-                  <li className="font-p text-base hover:bg-[#222] hover:text-white transition duration-500 sm:hidden">
-                    MySQL e MongoDB
-                  </li>
-                  <li className="font-p text-base hover:bg-[#222] hover:text-white transition duration-500 sm:hidden">
-                    Git, Servidor Linux, Metodologia Agile
-                  </li>
+                  <Lista>
+                    <div className="max-sm:hidden">Front</div>
+                    <div>JavaScript, React, Tailwind, TypeScript</div>
+                  </Lista>
+                  <Lista>
+                    <div className="max-sm:hidden">Back</div>
+                    <div>.NET</div>
+                  </Lista>
+                  <Lista>
+                    <div className="max-sm:hidden">Banco de dados</div>
+                    <div>MySQL, MongoDB</div>
+                  </Lista>
+                  <Lista>
+                    <span className="max-sm:hidden">Complementar</span>
+                    <span>Git, Servidores Linux, Metodologia Agile</span>
+                  </Lista>
                 </ul>
               </nav>
             </div>
             <div className="flex flex-col gap-4">
               <div className="relative flex items-center text-xl max-sm:justify-center">
-                <h1 className="font-title">Cursos</h1>
+                <h2 className="font-title">Cursos</h2>
                 <FontAwesomeIcon
                   className="absolute left-[-40px] top-1/2 w-5 transform -translate-y-1/2 text-neutral-600 max-sm:hidden"
                   icon={faBookOpen}
@@ -174,33 +163,33 @@ export default function Main({ activeSection }: MainProps) {
               </div>
               <nav>
                 <ul className="flex flex-col gap-2 text-neutral-400 cursor-pointer">
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:flex-col">
+                  <Lista>
                     <a
                       href="https://www.udemy.com/share/101Wjk3@quGoc0HSwRJ_ZMdZIhy3DiOJseMCoY5XP9bUrISLrYkUq8lipLgYTQhF6caB4AEm/"
                       target="_blank"
                     >
                       C# COMPLETO Programação Orientada a Objetos
                     </a>
-                  </li>
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:justify-center">
+                  </Lista>
+                  <Lista>
                     <a
                       href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/"
                       target="_blank"
                     >
                       JavaScript e TypeScript do básico ao avançado
                     </a>
-                  </li>
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:flex-col">
+                  </Lista>
+                  <Lista>
                     <a href="https://www.origamid.com/" target="_blank">
                       Web Design, UX/UI Design, HTML, CSS, JavaScript e React
                     </a>
-                  </li>
+                  </Lista>
                 </ul>
               </nav>
             </div>
             <div className="flex flex-col gap-4">
               <div className="relative flex items-center text-xl max-sm:justify-center">
-                <h1 className="font-title">Idiomas</h1>
+                <h2 className="font-title">Idiomas</h2>
                 <FontAwesomeIcon
                   className="absolute left-[-40px] top-1/2 w-5 transform -translate-y-1/2 text-neutral-600 max-sm:hidden"
                   icon={faLanguage}
@@ -208,20 +197,16 @@ export default function Main({ activeSection }: MainProps) {
               </div>
               <nav>
                 <ul className="flex flex-col gap-2 text-neutral-400">
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:hidden">
-                    Inglês
-                    <span>Avançado</span>
-                  </li>
-                  <li className="flex flex-1 flex-wrap justify-between items-center gap-4 font-p text-base hover:bg-[#222] hover:text-white transition duration-500 max-sm:hidden">
-                    Espanhol
-                    <span>Básico</span>
-                  </li>
-                  <li className="font-p text-base hover:bg-[#222] hover:text-white transition duration-500 sm:hidden">
-                    Inglês - Avançado
-                  </li>
-                  <li className="font-p text-base hover:bg-[#222] hover:text-white transition duration-500 sm:hidden">
-                    Espanhol - Básico
-                  </li>
+                  <Lista>
+                    <div className="max-sm:hidden">Inglês</div>
+                    <div className="max-sm:hidden">Avançado</div>
+                    <div className="sm:hidden">Inglês - Avançado</div>
+                  </Lista>
+                  <Lista>
+                    <div className="max-sm:hidden">Edivhol</div>
+                    <div className="max-sm:hidden">Básico</div>
+                    <div className="sm:hidden">Espanhol - Básico</div>
+                  </Lista>
                 </ul>
               </nav>
             </div>
