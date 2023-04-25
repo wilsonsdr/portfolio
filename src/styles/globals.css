@@ -10,38 +10,25 @@ body {
   background-color: #111;
 }
 
-.slick-next {
-  right: -85px;
-  bottom: -20px;
+.slick-prev:before,
+.slick-next:before {
+  position: absolute;
+  font-size: 24px;
+  top: 0;
 }
 
-.slick-next::before,
-.slick-prev::before {
-  font-size: 30px;
+.slick-prev:before {
+  left: -40px;
 }
 
-.slick-prev {
-  left: -85px;
-  bottom: -20px;
-  font-size: 40px;
-}
-
-.slick-track {
-  height: 240px;
+.slick-next:before {
+  right: -48px;
 }
 
 @media (max-width: 380px) {
 
-  .slick-next::before,
-  .slick-prev::before {
+  .slick-prev:before,
+  .slick-next:before {
     display: none;
   }
 }
-
-@media (max-width: 500px) {
-  .slick-next {
-    right: -70px;
-  }
-}
-
-

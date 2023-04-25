@@ -24,7 +24,7 @@ interface MainProps {
 
 export default function Main({ activeSection }: MainProps) {
   return (
-    <div>
+    <main>
       {activeSection == "home" && (
         <Container>
           <Title>Wilson Souto dos Reis</Title>
@@ -300,7 +300,7 @@ export default function Main({ activeSection }: MainProps) {
             um prazer trocar conhecimentos e ideias!
           </P>
           <nav>
-            <ul className="flex items-center gap-4 text-3xl animate-bounce mt-4">
+            <ul className="flex items-center gap-4 text-3xl animate-bounce mt-4 max-sm:animate-none ">
               <li>
                 <a href="https://github.com/wilsonsdr" target="_blank">
                   <FontAwesomeIcon icon={faGithubSquare} />
@@ -330,6 +330,6 @@ export default function Main({ activeSection }: MainProps) {
           />
         </Container>
       )}
-    </div>
+    </main>
   );
 }
