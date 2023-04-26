@@ -15,9 +15,9 @@ export default function Header() {
           <ul className="flex flex-wrap justify-start items-center gap-5 font-nav-menu text-neutral-400 text-xl max-sm:justify-center max-sm:text-lg">
             <li>
               <a
-                className={`hover:text-white transition-all duration-500 ${
+                className={`px-2 hover:text-white transition-all duration-1000 ${
                   activeSection === "home"
-                    ? "text-white bg-zinc-800 rounded-full"
+                    ? "text-white bg-zinc-800 rounded-md"
                     : ""
                 }`}
                 onClick={() => handleMenuClick("home")}
@@ -29,9 +29,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`hover:text-white transition-all duration-500 ${
+                className={`px-2 hover:text-white transition-all duration-500 ${
                   activeSection === "experiencia"
-                    ? "text-white bg-zinc-800 rounded-full"
+                    ? "text-white bg-zinc-800 rounded-md"
                     : ""
                 }`}
                 onClick={() => handleMenuClick("experiencia")}
@@ -43,9 +43,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`hover:text-white transition-all duration-500 ${
+                className={`px-2 hover:text-white transition-all duration-500 ${
                   activeSection === "formacao"
-                    ? "text-white bg-zinc-800 rounded-full"
+                    ? "text-white bg-zinc-800 rounded-md"
                     : ""
                 }`}
                 onClick={() => handleMenuClick("formacao")}
@@ -57,9 +57,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`hover:text-white transition-all duration-500 ${
+                className={`px-2 hover:text-white transition-all duration-500 ${
                   activeSection === "projetos"
-                    ? "text-white bg-zinc-800 rounded-full"
+                    ? "text-white bg-zinc-800 rounded-md"
                     : ""
                 }`}
                 onClick={() => handleMenuClick("projetos")}
@@ -71,9 +71,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`hover:text-white transition-all duration-500 ${
+                className={`px-2 hover:text-white transition-all duration-500 ${
                   activeSection === "contato"
-                    ? "text-white bg-zinc-800 rounded-full"
+                    ? "text-white bg-zinc-800 rounded-md"
                     : ""
                 }`}
                 onClick={() => handleMenuClick("contato")}

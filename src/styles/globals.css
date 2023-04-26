@@ -24,11 +24,3 @@ body {
 .slick-next:before {
   right: -48px;
 }
-
-@media (max-width: 380px) {
-
-  .slick-prev:before,
-  .slick-next:before {
-    display: none;
-  }
-}
