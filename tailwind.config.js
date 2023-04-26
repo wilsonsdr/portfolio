@@ -12,10 +12,10 @@ module.exports = {
       }
     },
     fontFamily: {
-      'nav-menu': ['Indie Flower', 'cursive'],
-      'title': ['Bungee', 'cursive'],
-      'p': ['Poltawski Nowy', 'serif'],
-      'typewriter': ['OCR A Extended', 'sans-serif'],
+      'nav-menu': ['Apercu', 'sans-serif'],
+      'title': ['Bungee', 'serif'],
+      'p': ['Apercu', 'sans-serif'],
+      'typewriter': ['Apercu', 'sans-serif'],
     }
   },
   plugins: [],

@@ -12,10 +12,10 @@ export default function Header() {
     <div className="py-9">
       <header>
         <nav>
-          <ul className="flex flex-wrap justify-start items-center gap-5 font-nav-menu text-neutral-400 text-xl max-sm:justify-center max-sm:text-lg">
+          <ul className="flex flex-wrap justify-start items-center gap-5 font-nav-menu text-neutral-600 text-xl max-sm:justify-center max-sm:text-lg">
             <li>
               <a
-                className={`px-2 hover:text-white transition-all duration-1000 ${
+                className={`p-2 hover:text-white transition-all duration-1000 ${
                   activeSection === "home"
                     ? "text-white bg-zinc-800 rounded-md"
                     : ""
@@ -29,7 +29,7 @@ export default function Header() {
 
             <li>
               <a
-                className={`px-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 hover:text-white transition-all duration-500 ${
                   activeSection === "experiencia"
                     ? "text-white bg-zinc-800 rounded-md"
                     : ""
@@ -43,7 +43,7 @@ export default function Header() {
 
             <li>
               <a
-                className={`px-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 hover:text-white transition-all duration-500 ${
                   activeSection === "formacao"
                     ? "text-white bg-zinc-800 rounded-md"
                     : ""
@@ -57,7 +57,7 @@ export default function Header() {
 
             <li>
               <a
-                className={`px-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 hover:text-white transition-all duration-500 ${
                   activeSection === "projetos"
                     ? "text-white bg-zinc-800 rounded-md"
                     : ""
@@ -71,7 +71,7 @@ export default function Header() {
 
             <li>
               <a
-                className={`px-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 hover:text-white transition-all duration-500 ${
                   activeSection === "contato"
                     ? "text-white bg-zinc-800 rounded-md"
                     : ""

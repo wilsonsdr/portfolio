@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt">
       <Head />
-      <title>Portfolio</title>
+      <title>Wilson Reis</title>
       <link rel="icon" type="image/x-icon" href="/img/logo.svg"/>
       <body>
         <Main />

@@ -28,7 +28,7 @@ export default function Main({ activeSection }: MainProps) {
     <main>
       {activeSection == "home" && (
         <Container>
-          <Title>Wilson Souto dos Reis</Title>
+          <Title>Wilson Reis</Title>
           <P>
             Apaixonado pelo que faz, acredita que a chave para um bom
             desenvolvedor é estar em constante aprendizado.
@@ -285,7 +285,7 @@ export default function Main({ activeSection }: MainProps) {
             um prazer trocar conhecimentos e ideias!
           </P>
           <nav>
-            <ul className="flex items-center gap-4 text-3xl animate-bounce mt-4 max-sm:animate-none ">
+            <ul className="flex items-center gap-4 text-3xl mt-4">
               <li>
                 <a href="https://github.com/wilsonsdr" target="_blank">
                   <FontAwesomeIcon icon={faGithubSquare} />
