@@ -9,16 +9,16 @@ export default function Header() {
   };
 
   return (
-    <div className="py-9">
+    <div className="py-7 w-8/12 mx-auto">
       <header>
         <nav>
-          <ul className="flex flex-wrap justify-start items-center gap-5 font-nav-menu text-neutral-600 text-xl max-sm:justify-center max-sm:text-lg">
+          <ul className="flex flex-wrap justify-start items-center gap-4 font-nav-menu text-xl text-info-color max-md:justify-center max-md:text-lg">
             <li>
               <a
-                className={`p-2 hover:text-white transition-all duration-1000 ${
+                className={`p-2 block ${
                   activeSection === "home"
-                    ? "text-white bg-zinc-800 rounded-md"
-                    : ""
+                    ? "text-bg-color bg-highlight-color  rounded-md"
+                    : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("home")}
                 href="#home"
@@ -29,10 +29,10 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 block ${
                   activeSection === "experiencia"
-                    ? "text-white bg-zinc-800 rounded-md"
-                    : ""
+                    ? "text-bg-color bg-highlight-color  rounded-md"
+                    : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("experiencia")}
                 href="#experiencia"
@@ -43,10 +43,10 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 block ${
                   activeSection === "formacao"
-                    ? "text-white bg-zinc-800 rounded-md"
-                    : ""
+                    ? "text-bg-color bg-highlight-color  rounded-md"
+                    : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("formacao")}
                 href="#formacao"
@@ -57,10 +57,10 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 block ${
                   activeSection === "projetos"
-                    ? "text-white bg-zinc-800 rounded-md"
-                    : ""
+                    ? "text-bg-color bg-highlight-color rounded-md"
+                    : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("projetos")}
                 href="#projetos"
@@ -71,10 +71,10 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 hover:text-white transition-all duration-500 ${
+                className={`p-2 block ${
                   activeSection === "contato"
-                    ? "text-white bg-zinc-800 rounded-md"
-                    : ""
+                    ? "text-bg-color bg-highlight-color rounded-md"
+                    : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("contato")}
                 href="#contato"

@@ -11,8 +11,8 @@ interface ProjectItemProps {
 export default function ProjectItem(props: ProjectItemProps) {
   return (
     <div className="relative">
-      <div className="absolute opacity-0 top-0 left-0 w-full h-full hover:opacity-90 hover:bg-black transition-all duration-500">
-        <div className="absolute flex flex-col gap-4 text-center left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 font-p">
+      <div className="absolute opacity-0 top-0 left-0 w-full h-full hover:opacity-90 hover:bg-[#000] transition-all duration-500">
+        <div className="absolute flex flex-col gap-4 text-center left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 font-p text-secondary-color">
           <h1 className="text-2xl max-sm:text-xl max-md:text-3xl">
             {props.name}
           </h1>

@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import ProjectItem from "../project/ProjectItem";
+import ShadowCard from "../elements/ShadowCard";
 
 export default function Carousel() {
   const settings = {
@@ -11,8 +12,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="flex flex-col relative w-9/12 h-[270px] mt-4 p-4 bg-[#222] rounded-sm">
-      <div className="absolute z-[-1] w-full h-full mt-2 bg-black rounded-sm"></div>
+    <ShadowCard>
       <Slider {...settings}>
         <ProjectItem
           name="Pizzaria Donna"
@@ -52,6 +52,6 @@ export default function Carousel() {
           alt="luffy"
         ></ProjectItem>
       </Slider>
-    </div>
+    </ShadowCard>
   );
 }

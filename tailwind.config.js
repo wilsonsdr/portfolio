@@ -13,9 +13,17 @@ module.exports = {
     },
     fontFamily: {
       'nav-menu': ['Apercu', 'sans-serif'],
-      'title': ['Bungee', 'serif'],
+      'title': ['Libre Baskerville', 'serif'],
       'p': ['Apercu', 'sans-serif'],
-      'typewriter': ['Apercu', 'sans-serif'],
+    },
+    colors: {
+      "bg-color": "var(--bg-color)",
+      "primary-color": "var(--primary-color)",
+      "secondary-color": "var(--secondary-color)",
+      "highlight-color": "var(--highlight-color)",
+      "info-color": "var(--info-color)",
+      "card-color": "var(--card-color)",
+      "dark-color": "var(--dark-color)",
     }
   },
   plugins: [],

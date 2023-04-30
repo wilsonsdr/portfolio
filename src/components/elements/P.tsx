@@ -1,9 +1,13 @@
 import React from "react";
 
 interface PProps {
-  children: React.ReactNode;
+  text: string;
 }
 
-export default function P(props: PProps) {
-  return <p className="text-lg md:text-lg lg:text-xl font-p text-neutral-200 w-11/12 max-md:w-full">{props.children}</p>;
+export default function P({ text }: PProps) {
+  return (
+    <p className="text-lg w-11/12 font-p text-primary-color md:text-lg lg:text-xl max-md:w-full">
+      {text}
+    </p>
+  );
 }

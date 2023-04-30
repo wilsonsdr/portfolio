@@ -1,11 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.cdnfonts.com/css/apercu');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --bg-color: #112233;
+    --primary-color: #A7B6C2;
+    --secondary-color: #FFFFFF;
+    --highlight-color: #F9C784;
+    --info-color: #E0E0E0;
+    --card-color: #F2E8D4;
+    --dark-color: #333333;
+  }
+}
+
 body {
-  background-color: #111;
+  background-color: var(--bg-color);
 }
 
 .slick-prev:before,

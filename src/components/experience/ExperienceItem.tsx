@@ -12,13 +12,13 @@ interface ExperienceItemProps {
 export default function ExperienceItem(props: ExperienceItemProps) {
   return (
     <div className="flex flex-1 flex-wrap flex-col gap-5">
-      <h2 className="text-lg md:text-lg lg:text-xl font-p text-neutral-200 w-11/12 max-md:w-full">
+      <h2 className="text-lg md:text-lg lg:text-xl font-p w-11/12 text-highlight-color  max-md:w-full">
         {props.company} - {props.role}
       </h2>
-      <span className="text-neutral-400 italic font-p text-lg">
+      <span className="italic font-p text-lg text-info-color">
         {props.startDate} - {props.endDate}
       </span>
-      <P>{props.description}</P>
+      <P text={props.description}></P>
     </div>
   );
 }
