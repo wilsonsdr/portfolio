@@ -11,14 +11,14 @@ interface ProjectItemProps {
 export default function ProjectItem(props: ProjectItemProps) {
   return (
     <div className="relative">
-      <div className="absolute opacity-0 top-0 left-0 w-full h-full hover:opacity-90 hover:bg-[#000] transition-all duration-500">
-        <div className="absolute flex flex-col gap-4 text-center left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 font-p text-secondary-color">
-          <h1 className="text-2xl max-sm:text-xl max-md:text-3xl">
+      <div className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-500 hover:bg-[#000] hover:opacity-90">
+        <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 transform flex-col gap-4 text-center font-p text-secondary-color">
+          <h1 className="text-2xl max-md:text-3xl max-sm:text-xl">
             {props.name}
           </h1>
           <span className="max-md:hidden">{props.description}</span>
           <a
-            className="p-1 bg-[#222] block rounded-full hover:bg-[#333] max-sm:text-sm max-md:text-xl"
+            className="block rounded-full bg-[#222] p-1 hover:bg-[#333] max-md:text-xl max-sm:text-sm"
             href={`${props.href}`}
             target="_blank"
           >
@@ -27,7 +27,7 @@ export default function ProjectItem(props: ProjectItemProps) {
         </div>
       </div>
       <img
-        className="object-cover w-full h-[235px]"
+        className="h-[235px] w-full object-cover"
         width={235}
         height={235}
         src={`${props.src}`}

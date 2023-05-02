@@ -9,15 +9,15 @@ export default function Header() {
   };
 
   return (
-    <div className="py-7 w-8/12 mx-auto">
+    <div className="mx-auto w-8/12 py-7">
       <header>
         <nav>
-          <ul className="flex flex-wrap justify-start items-center gap-4 font-nav-menu text-xl text-info-color max-md:justify-center max-md:text-lg">
+          <ul className="flex flex-wrap items-center justify-start gap-4 font-nav-menu text-xl text-info-color max-md:justify-center max-md:text-lg">
             <li>
               <a
-                className={`p-2 block ${
+                className={`block p-2 ${
                   activeSection === "home"
-                    ? "text-bg-color bg-highlight-color  rounded-md"
+                    ? "rounded-md bg-highlight-color  text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("home")}
@@ -29,9 +29,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 block ${
+                className={`block p-2 ${
                   activeSection === "experiencia"
-                    ? "text-bg-color bg-highlight-color  rounded-md"
+                    ? "rounded-md bg-highlight-color  text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("experiencia")}
@@ -43,9 +43,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 block ${
+                className={`block p-2 ${
                   activeSection === "formacao"
-                    ? "text-bg-color bg-highlight-color  rounded-md"
+                    ? "rounded-md bg-highlight-color  text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("formacao")}
@@ -57,9 +57,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 block ${
+                className={`block p-2 ${
                   activeSection === "projetos"
-                    ? "text-bg-color bg-highlight-color rounded-md"
+                    ? "rounded-md bg-highlight-color text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("projetos")}
@@ -71,9 +71,9 @@ export default function Header() {
 
             <li>
               <a
-                className={`p-2 block ${
+                className={`block p-2 ${
                   activeSection === "contato"
-                    ? "text-bg-color bg-highlight-color rounded-md"
+                    ? "rounded-md bg-highlight-color text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("contato")}

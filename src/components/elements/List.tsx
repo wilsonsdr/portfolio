@@ -9,7 +9,7 @@ interface ListProps {
 export default function List(props: ListProps) {
   return (
     <nav>
-      <ul className="flex flex-col gap-2 text-neutral-400">{props.children}</ul>
+      <ul className="text-neutral-400 flex flex-col gap-2">{props.children}</ul>
     </nav>
   );
 }
@@ -23,7 +23,7 @@ interface ListItemProps {
 export function ListItem(props: ListItemProps) {
   return (
     <li
-      className={`flex flex-1 flex-wrap items-center ${props.justify} ${props.gap} text-base font-p text-primary-color max-md:justify-center`}
+      className={`flex flex-1 flex-wrap items-center ${props.justify} ${props.gap} font-p text-base text-primary-color max-md:justify-center`}
     >
       {props.children}
     </li>

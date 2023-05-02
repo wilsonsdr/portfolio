@@ -6,7 +6,7 @@ interface PProps {
 
 export default function P({ text }: PProps) {
   return (
-    <p className="text-lg w-11/12 font-p text-primary-color md:text-lg lg:text-xl max-md:w-full">
+    <p className="w-11/12 font-p text-lg text-primary-color max-md:w-full md:text-lg lg:text-xl">
       {text}
     </p>
   );

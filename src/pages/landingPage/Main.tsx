@@ -43,7 +43,7 @@ export default function Main({ activeSection }: MainProps) {
             filosofia, música, xadrez e não dispensa um bom café."
           />
           <Image
-            className="fixed -z-50 top-[20px] right-[-10px] max-lg:hidden"
+            className="fixed right-[-10px] top-[20px] -z-50 max-lg:hidden"
             src="/img/coffe.svg"
             alt="coffe"
             width={350}
@@ -51,7 +51,7 @@ export default function Main({ activeSection }: MainProps) {
           />
           <Image
             src="/img/guitar.svg"
-            className="fixed -z-50 bottom-[-50px] left-[60px] max-md:opacity-30"
+            className="fixed bottom-[-50px] left-[60px] -z-50 max-md:opacity-30"
             alt="guitar"
             width={100}
             height={100}
@@ -88,7 +88,7 @@ export default function Main({ activeSection }: MainProps) {
             Internet, entre outros)."
           ></ExperienceItem>
           <Image
-            className="fixed -z-50 right-10 top-10 max-md:top-[170px] max-md:right-[-10px] max-md:opacity-30"
+            className="fixed right-10 top-10 -z-50 max-md:right-[-10px] max-md:top-[170px] max-md:opacity-30"
             src="/img/name-tag.svg"
             alt="name-tag"
             width={230}
@@ -104,7 +104,7 @@ export default function Main({ activeSection }: MainProps) {
             experiência acadêmica foi o Tecnólogo."
           />
           <ShadowCard>
-            <div className="absolute w-32 top-[-15px] rounded-full p-1 text-center bg-highlight-color text-bg-color max-md:left-1/2 max-md:transform max-md:-translate-x-1/2">
+            <div className="absolute top-[-15px] w-32 rounded-full bg-highlight-color p-1 text-center text-bg-color max-md:left-1/2 max-md:-translate-x-1/2 max-md:transform">
               Tecnólogo
             </div>
             <h3 className="mt-3 font-bold text-dark-color">
@@ -112,8 +112,8 @@ export default function Main({ activeSection }: MainProps) {
             </h3>
             <span className="text-dark-color">FIAP - 2022</span>
           </ShadowCard>
-          <div className="flex flex-1 flex-col gap-10 mt-10">
-            <div className="flex flex-wrap flex-col gap-4">
+          <div className="mt-10 flex flex-1 flex-col gap-10">
+            <div className="flex flex-col flex-wrap gap-4">
               <div className="relative flex items-center text-xl max-md:justify-center">
                 <Subtitle text="Habilidades" />
                 <EducationIcon icon={faComputerMouse} />
@@ -183,7 +183,7 @@ export default function Main({ activeSection }: MainProps) {
             </div>
           </div>
           <Image
-            className="fixed -z-50 top-10 right-20 w-[150px] animate-spin-slow max-md:top-[140px] max-md:right-[-5px] max-md:opacity-30"
+            className="fixed right-20 top-10 -z-50 w-[150px] animate-spin-slow max-md:right-[-5px] max-md:top-[140px] max-md:opacity-30"
             width={150}
             height={150}
             src="/img/react.svg"
@@ -196,42 +196,42 @@ export default function Main({ activeSection }: MainProps) {
           <Title title="Projetos" />
           <Carousel />
           <Image
-            className="fixed -z-50 top-[70px] right-[400px] max-xl:hidden"
+            className="fixed right-[400px] top-[70px] -z-50 max-xl:hidden"
             src="/img/cloud.svg"
             alt="cloud"
             width={100}
             height={100}
           />
           <Image
-            className="fixed -z-50 top-[10px] right-[300px] max-xl:hidden"
+            className="fixed right-[300px] top-[10px] -z-50 max-xl:hidden"
             src="/img/cloud.svg"
             alt="cloud"
             width={100}
             height={100}
           />
           <Image
-            className="fixed -z-50 top-[10px] right-[220px] animate-pulse max-lg:top-[90px] max-md:top-[40px] max-md:right-[10px] max-md:opacity-30"
+            className="fixed right-[220px] top-[10px] -z-50 animate-pulse max-lg:top-[90px] max-md:right-[10px] max-md:top-[40px] max-md:opacity-30"
             src="/img/star.svg"
             alt="star"
             width={70}
             height={70}
           />
           <Image
-            className="fixed -z-50 top-[50px] right-[250px] animate-pulse max-lg:top-[150px] max-md:top-[100px] max-md:right-[40px] max-md:opacity-30"
+            className="fixed right-[250px] top-[50px] -z-50 animate-pulse max-lg:top-[150px] max-md:right-[40px] max-md:top-[100px] max-md:opacity-30"
             src="/img/star.svg"
             alt="star"
             width={50}
             height={50}
           />
           <Image
-            className="fixed -z-50 top-[40px] right-[100px] animate-pulse max-lg:top-[130px] max-md:opacity-30"
+            className="fixed right-[100px] top-[40px] -z-50 animate-pulse max-lg:top-[130px] max-md:opacity-30"
             src="/img/star.svg"
             alt="star"
             width={50}
             height={50}
           />
           <Image
-            className="fixed -z-50 top-[60px] right-[150px] max-lg:hidden"
+            className="fixed right-[150px] top-[60px] -z-50 max-lg:hidden"
             src="/img/spaceship.svg"
             alt="spaceship"
             width={100}
@@ -276,7 +276,7 @@ export default function Main({ activeSection }: MainProps) {
             </ListItem>
           </List>
           <Image
-            className="fixed -z-50 top-1/2 left-2/3 max-md:opacity-30"
+            className="fixed left-2/3 top-1/2 -z-50 max-md:opacity-30"
             src="/img/paper-airplane.svg"
             alt="paper-airplane"
             width={100}

@@ -6,7 +6,7 @@ interface ContainerProps {
 
 export default function Container(props: ContainerProps) {
   return (
-    <section className="relative flex flex-1 flex-wrap flex-col gap-5 pt-9 text-white max-md:text-center max-md:items-center z-50">
+    <section className="text-white relative z-50 flex flex-1 flex-col flex-wrap gap-5 pt-9 max-md:items-center max-md:text-center">
       {props.children}
     </section>
   );
