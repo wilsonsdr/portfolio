@@ -17,8 +17,8 @@ export default function Carousel() {
         <ProjectItem
           name="Pizzaria Donna"
           description="Landing Page com design de pizaria, mas na realidade é um canal de denúncia contra a violência doméstica"
-          href="https://wilsonsdr.github.io/pizzaria-donna/"
-          src="https://wilsonsdr.github.io/pizzaria-donna/img/banner-bg.webp"
+          href="https://pizzaria-donna.vercel.app/"
+          src="https://raw.githubusercontent.com/wilsonsdr/pizzaria-donna/main/public/img/banner-bg.webp"
           alt="pizza"
         ></ProjectItem>
         <ProjectItem
