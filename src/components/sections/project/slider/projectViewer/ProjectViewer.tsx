@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ProjectItemProps {
+interface ProjectViewerProps {
   name: string;
   description: string;
   href: string;
@@ -8,7 +8,7 @@ interface ProjectItemProps {
   alt: string;
 }
 
-export default function ProjectItem(props: ProjectItemProps) {
+export default function ProjectViewer(props: ProjectViewerProps) {
   return (
     <div className="relative">
       <div className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-500 hover:bg-[#000] hover:opacity-90">

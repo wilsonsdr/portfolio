@@ -1,7 +1,7 @@
 import React from "react";
-import P from "../elements/P";
+import P from "@/components/elements/P";
 
-interface ExperienceItemProps {
+interface JobListProps {
   company: string;
   role: string;
   startDate: string;
@@ -9,7 +9,7 @@ interface ExperienceItemProps {
   description: string;
 }
 
-export default function ExperienceItem(props: ExperienceItemProps) {
+export default function JobList(props: JobListProps) {
   return (
     <div className="flex flex-1 flex-col flex-wrap gap-5">
       <h2 className="w-11/12 font-p text-lg text-highlight-color max-md:w-full md:text-lg  lg:text-xl">

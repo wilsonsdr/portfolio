@@ -1,6 +1,5 @@
 import React from "react";
-import { Justify } from "../enum/Justify";
-import { Gap } from "../enum/Gap";
+import { Justify, Gap } from "../enum";
 
 interface ListProps {
   children: React.ReactNode;
