@@ -3,7 +3,7 @@ import Main from "./Main";
 
 export default function Header() {
   const [activeSection, setActiveSection] = useState("home");
-  const [activeSlide, setActiveSlide] = useState("0%");
+  const [activeSlide, setActiveSlide] = useState("0");
 
   const handleMenuClick = (section: string, top: string) => {
     setActiveSection(section);
@@ -11,22 +11,23 @@ export default function Header() {
   };
 
   return (
-    <div className="mx-auto flex w-10/12 flex-row gap-[200px] py-20">
-      <header>
+    <div className="mx-auto flex w-10/12 flex-row gap-[220px] py-20">
+      <header className="relative">
         <nav className="fixed">
-          <ul className="relative flex flex-col flex-wrap items-start justify-start gap-2 font-nav-menu text-lg text-info-color max-md:justify-center max-md:text-lg">
+          <ul className="flex flex-col flex-wrap items-start justify-start gap-4 font-nav-menu text-lg text-info-color max-md:justify-center max-md:text-lg">
             <li
-              className={`absolute left-0 top-[${activeSlide}] -z-20 h-1/5 w-full rounded-md bg-highlight-color duration-300 ease-out`}
+              style={{ top: `${activeSlide}` }}
+              className={`absolute left-0 -z-20 h-1/5 w-full rounded-md bg-highlight-color duration-300 ease-out`}
             ></li>
             <li>
               <a
                 aria-label="home"
-                className={`mt-[2px] block px-4 py-2 ${
+                className={`mt-3 block px-4 ${
                   activeSection === "home"
                     ? "text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
-                onClick={() => handleMenuClick("home", "0%")}
+                onClick={() => handleMenuClick("home", "0")}
                 href="#home"
               >
                 home
@@ -35,7 +36,7 @@ export default function Header() {
             <li>
               <a
                 aria-label="experiencia"
-                className={`block px-4 py-2 pt-[2px] ${
+                className={`my-1 block px-4 ${
                   activeSection === "experiencia"
                     ? "text-bg-color"
                     : "hover:text-secondary-color"
@@ -49,7 +50,7 @@ export default function Header() {
             <li>
               <a
                 aria-label="formacao"
-                className={`block px-4 py-2 pt-[2px] ${
+                className={`my-1 block px-4 ${
                   activeSection === "formacao"
                     ? "text-bg-color"
                     : "hover:text-secondary-color"
@@ -63,7 +64,7 @@ export default function Header() {
             <li>
               <a
                 aria-label="projetos"
-                className={`block px-4 py-2 pt-[2px] ${
+                className={`mb-2 block px-4 ${
                   activeSection === "projetos"
                     ? "text-bg-color"
                     : "hover:text-secondary-color"
@@ -77,7 +78,7 @@ export default function Header() {
             <li>
               <a
                 aria-label="contato"
-                className={`block px-4 py-2 pt-[2px] ${
+                className={`mb-3 block px-4 ${
                   activeSection === "contato"
                     ? "text-bg-color"
                     : "hover:text-secondary-color"
