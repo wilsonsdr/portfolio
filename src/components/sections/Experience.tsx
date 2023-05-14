@@ -34,11 +34,12 @@ export default function Experience() {
       Internet, entre outros)."
       ></JobList>
       <Image
-        className="fixed right-10 top-10 -z-50 max-md:right-[-10px] max-md:top-[170px] max-md:opacity-30"
+        className="fixed right-10 top-10 -z-50 h-[200px] w-[230px] max-md:right-[-10px] max-md:top-[170px] max-md:opacity-30"
         src="/img/name-tag.svg"
         alt="name-tag"
         width={230}
         height={200}
+        loading="lazy"
       />
     </Container>
   );

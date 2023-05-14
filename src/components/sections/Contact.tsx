@@ -38,11 +38,12 @@ export default function Contact() {
         </ListItem>
       </List>
       <Image
-        className="fixed left-2/3 top-1/2 -z-50 max-md:opacity-30"
+        className="fixed left-2/3 top-1/2 -z-50 h-[100px] w-[100px] max-md:opacity-30"
         src="/img/paper-airplane.svg"
         alt="paper-airplane"
         width={100}
         height={100}
+        loading="lazy"
       />
     </Container>
   );

@@ -106,11 +106,12 @@ export default function Education() {
         </div>
       </div>
       <Image
-        className="fixed right-20 top-10 -z-50 w-[150px] animate-spin-slow max-md:right-[-5px] max-md:top-[140px] max-md:opacity-30"
+        className="fixed right-20 top-10 -z-50 h-[150px] w-[150px] animate-spin-slow max-md:right-[-5px] max-md:top-[140px] max-md:opacity-30"
         width={150}
         height={150}
         src="/img/react.svg"
         alt="react"
+        loading="lazy"
       />
     </Container>
   );

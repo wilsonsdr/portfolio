@@ -14,18 +14,20 @@ export default function Home() {
       filosofia, música, xadrez e não dispensa um bom café."
       />
       <Image
-        className="fixed right-[-10px] top-[20px] -z-50 max-lg:hidden"
+        className="fixed right-[-10px] top-[20px] -z-50 h-[350px] w-[350px] max-lg:hidden"
         src="/img/coffe.svg"
         alt="coffe"
         width={350}
         height={350}
+        priority={true}
       />
       <Image
         src="/img/guitar.svg"
-        className="fixed bottom-[-50px] left-[60px] -z-50 max-md:opacity-30"
+        className="fixed bottom-[-50px] left-[60px] -z-50 h-[200px] w-[100px] max-md:opacity-30"
         alt="guitar"
         width={100}
-        height={100}
+        height={200}
+        loading="lazy"
       />
     </Container>
   );
