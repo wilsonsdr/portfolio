@@ -21,14 +21,6 @@ export default function Home() {
         height={350}
         priority={true}
       />
-      <Image
-        src="/img/guitar.svg"
-        className="fixed bottom-[-50px] left-[60px] -z-50 h-[200px] w-[100px] max-md:opacity-30"
-        alt="guitar"
-        width={100}
-        height={200}
-        loading="lazy"
-      />
     </Container>
   );
 }

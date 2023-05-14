@@ -8,14 +8,7 @@ export default function Project() {
     <Container>
       <Title title="Projetos" />
       <Carousel />
-      <Image
-        className="fixed right-[400px] top-[70px] -z-50 h-[100px] w-[100px] max-xl:hidden"
-        src="/img/cloud.svg"
-        alt="cloud"
-        width={100}
-        height={100}
-        loading="lazy"
-      />
+
       <Image
         className="fixed right-[300px] top-[10px] -z-50 h-[100px] w-[100px] max-xl:hidden"
         src="/img/cloud.svg"

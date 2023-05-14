@@ -9,26 +9,28 @@ export default function Header() {
   };
 
   return (
-    <div className="mx-auto w-8/12 py-7">
+    <div className="mx-auto flex w-10/12 flex-row gap-[200px] py-20">
       <header>
-        <nav>
-          <ul className="flex flex-wrap items-center justify-start gap-4 font-nav-menu text-xl text-info-color max-md:justify-center max-md:text-lg">
+        <nav className="fixed">
+          <ul className="flex flex-col flex-wrap items-start justify-start gap-2 font-nav-menu text-lg text-info-color max-md:justify-center max-md:text-lg">
             <li>
               <a
+                aria-label="home"
                 className={`block p-2 ${
                   activeSection === "home"
-                    ? "rounded-md bg-highlight-color  text-bg-color"
+                    ? "rounded-md bg-highlight-color text-bg-color"
                     : "hover:text-secondary-color"
                 }`}
                 onClick={() => handleMenuClick("home")}
                 href="#home"
               >
-                Home
+                home
               </a>
             </li>
 
             <li>
               <a
+                aria-label="experiencia"
                 className={`block p-2 ${
                   activeSection === "experiencia"
                     ? "rounded-md bg-highlight-color  text-bg-color"
@@ -37,12 +39,13 @@ export default function Header() {
                 onClick={() => handleMenuClick("experiencia")}
                 href="#experiencia"
               >
-                Experiência
+                experiência
               </a>
             </li>
 
             <li>
               <a
+                aria-label="formacao"
                 className={`block p-2 ${
                   activeSection === "formacao"
                     ? "rounded-md bg-highlight-color  text-bg-color"
@@ -51,12 +54,13 @@ export default function Header() {
                 onClick={() => handleMenuClick("formacao")}
                 href="#formacao"
               >
-                Formação
+                formação
               </a>
             </li>
 
             <li>
               <a
+                aria-label="projetos"
                 className={`block p-2 ${
                   activeSection === "projetos"
                     ? "rounded-md bg-highlight-color text-bg-color"
@@ -65,12 +69,13 @@ export default function Header() {
                 onClick={() => handleMenuClick("projetos")}
                 href="#projetos"
               >
-                Projetos
+                projetos
               </a>
             </li>
 
             <li>
               <a
+                aria-label="contato"
                 className={`block p-2 ${
                   activeSection === "contato"
                     ? "rounded-md bg-highlight-color text-bg-color"
@@ -79,7 +84,7 @@ export default function Header() {
                 onClick={() => handleMenuClick("contato")}
                 href="#contato"
               >
-                Contato
+                contato
               </a>
             </li>
           </ul>
