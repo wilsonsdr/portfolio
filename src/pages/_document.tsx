@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <link rel="icon" type="image/x-icon" href="/img/logo.svg" />
       </Head>
-      <body>
+      <body className="bg-bg-color">
         <Main />
         <NextScript />
       </body>
