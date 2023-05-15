@@ -14,7 +14,7 @@ export default function Home() {
       filosofia, música, xadrez e não dispensa um bom café."
       />
       <Image
-        className="fixed right-[-10px] top-[20px] -z-50 h-[350px] w-[350px] max-lg:hidden"
+        className="fixed right-[-40px] top-[-40px] -z-50 h-[350px] w-[350px] max-lg:hidden"
         src="/img/coffe.svg"
         alt="coffe"
         width={350}

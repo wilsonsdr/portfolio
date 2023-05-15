@@ -8,7 +8,6 @@ export default function Carousel() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1,
   };
 
   return (
@@ -34,7 +33,7 @@ export default function Carousel() {
                 aleatório e tentamos adivinhar"
           href="https://codepen.io/wilsonsdr/full/JjvKpOK"
           src="https://c4.wallpaperflare.com/wallpaper/386/339/776/brain-digital-art-artificial-intelligence-glowing-wallpaper-preview.jpg"
-          alt="mind"
+          alt="brain"
         ></ProjectViewer>
         <ProjectViewer
           name="Conversor"
