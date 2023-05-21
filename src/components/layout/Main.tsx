@@ -11,7 +11,7 @@ interface MainProps {
 
 export default function Main({ activeSection }: MainProps) {
   return (
-    <main>
+    <main className="w-full h-full">
       {activeSection === "home" && <Home />}
       {activeSection === "experiência" && <Experience />}
       {activeSection === "formação" && <Education />}
