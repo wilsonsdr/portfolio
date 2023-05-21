@@ -5,6 +5,10 @@ export default function App() {
   return (
     <div className="flex flex-row gap-56">
       <Head>
+        <meta
+          name="description"
+          content="Portfolio com minhas experiências profissionais, formação acadêmica, projetos pessoais e links para contato"
+        />
         <title>Wilson</title>
       </Head>
       <Header />
