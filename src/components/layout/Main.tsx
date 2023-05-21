@@ -11,7 +11,7 @@ interface MainProps {
 
 export default function Main({ activeSection }: MainProps) {
   return (
-    <main className="flex flex-col">
+    <main>
       {activeSection === "home" && <Home />}
       {activeSection === "experiência" && <Experience />}
       {activeSection === "formação" && <Education />}

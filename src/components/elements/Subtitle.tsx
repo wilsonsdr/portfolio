@@ -1,14 +1,13 @@
 import React from "react";
+import { Color } from "../enum/color";
 
 interface SubtitleProps {
-  company: string;
-  role: string;
+  children: React.ReactNode;
+  color: Color;
 }
 
 export default function Subtitle(props: SubtitleProps) {
   return (
-    <h2 className="text-lg text-highlight-color max-md:w-full md:text-lg  lg:text-xl">
-      {props.company} - {props.role}
-    </h2>
+    <h2 className={`text-xl ${props.color} max-md:w-full`}>{props.children}</h2>
   );
 }
