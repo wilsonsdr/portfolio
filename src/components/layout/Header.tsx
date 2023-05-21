@@ -26,9 +26,13 @@ export default function Header() {
     <>
       <header className="relative">
         <nav className="fixed py-2 max-sm:left-0 max-sm:top-0 max-sm:z-50 max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-between max-sm:p-4 max-sm:backdrop-blur-md">
-          <span className="font-logo text-2xl text-primary-color sm:hidden">
-            wilson
-          </span>
+          <div
+            className="text-3xl flex items-center gap-4
+          font-logo text-secondary-color sm:hidden"
+          >
+            <img src="/img/decorative/logo.svg" className="w-10" alt="" />
+            <span>wilson</span>
+          </div>
 
           <ul
             className={`flex flex-col gap-4 text-xl text-primary-color max-sm:fixed max-sm:left-0 max-sm:top-[63px] max-sm:w-full max-sm:flex-col max-sm:rounded-b-md max-sm:bg-primary-color max-sm:p-4 max-sm:text-right ${
@@ -107,17 +111,17 @@ export default function Header() {
           </ul>
           <div className="cursor-pointer sm:hidden" onClick={menuBurguer}>
             <span
-              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out ${
+              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-secondary-color transition-all duration-300 ease-in-out ${
                 hiddenMenu ? "" : "translate-y-2 rotate-45"
               }`}
             ></span>
             <span
-              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out ${
+              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-secondary-color transition-all duration-300 ease-in-out ${
                 hiddenMenu ? "" : "opacity-0"
               }`}
             ></span>
             <span
-              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out ${
+              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-secondary-color transition-all duration-300 ease-in-out ${
                 hiddenMenu ? "" : "-translate-y-2 -rotate-45"
               }`}
             ></span>

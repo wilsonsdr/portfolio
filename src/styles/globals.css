@@ -1,5 +1,5 @@
 @import "inter-ui/inter.css";
-@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url("https://fonts.cdnfonts.com/css/g-gelang-script");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,4 +13,3 @@ html {
     font-family: "Inter var", "system-ui";
   }
 }
-

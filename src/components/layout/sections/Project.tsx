@@ -80,7 +80,7 @@ export function Icon() {
     <>
       <Image
         style={{ width: "64px", height: "64px" }}
-        className="fixed right-20 top-10 -z-50 animate-pulse opacity-90"
+        className="fixed right-20 top-10 -z-50 animate-pulse opacity-90 max-sm:right-10 max-sm:top-20"
         src="/img/decorative/star.svg"
         width={64}
         height={64}
@@ -88,7 +88,7 @@ export function Icon() {
       />
       <Image
         style={{ width: "64px", height: "64px" }}
-        className="fixed right-40 top-10 -z-50 animate-pulse opacity-30"
+        className="fixed right-40 top-10 -z-50 animate-pulse opacity-30 max-sm:right-24 max-sm:top-14"
         src="/img/decorative/star.svg"
         width={64}
         height={64}
