@@ -3,5 +3,7 @@ interface SectionProps {
 }
 
 export default function Section(props: SectionProps) {
-  return <section className="relative flex flex-col gap-5">{props.children}</section>;
+  return (
+    <section className="relative flex flex-col gap-5">{props.children}</section>
+  );
 }

@@ -4,6 +4,7 @@ import Title from "@/components/elements/Title";
 import P from "@/components/elements/P";
 import { FaGithubSquare, FaLinkedin, FaGooglePlusSquare } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -27,9 +28,9 @@ export default function Contact() {
           <FaGooglePlusSquare />
         </SocialMedia>
       </ul>
-      <img
+      <Image
         style={{ width: "384px", height: "384px" }}
-        className="fixed bottom-10 right-0 -z-50 opacity-50"
+        className="fixed -bottom-20 -right-0 -z-50 opacity-50 max-sm:-right-20"
         src="/img/coffe.svg"
         width={384}
         height={384}

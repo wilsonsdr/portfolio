@@ -7,7 +7,5 @@ interface SubtitleProps {
 }
 
 export default function Subtitle(props: SubtitleProps) {
-  return (
-    <h2 className={`text-xl ${props.color} max-md:w-full`}>{props.children}</h2>
-  );
+  return <h2 className={`text-xl ${props.color}`}>{props.children}</h2>;
 }

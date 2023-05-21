@@ -19,6 +19,9 @@ module.exports = {
       animation: {
         "spin-slow": "spin 3s linear infinite",
       },
+      fontFamily: {
+        logo: ["Sarina", "cursive"],
+      },
     },
   },
   plugins: [],

@@ -3,12 +3,13 @@ import Section from "../../elements/Section";
 import Title from "@/components/elements/Title";
 import ShadowCard from "@/components/elements/ShadowCard";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Project() {
   return (
     <Section>
       <Title>Projetos</Title>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 max-sm:pb-8">
         <ProjectViewer
           name="Pizzaria Donna"
           description="Landing Page com design de pizaria, mas na realidade é um canal de denúncia contra a violência doméstica"
@@ -61,7 +62,7 @@ export function ProjectViewer(props: ProjectViewerProps) {
             </Link>
           </div>
         </div>
-        <img
+        <Image
           className="h-60 w-full object-cover"
           width={240}
           height={240}
@@ -76,15 +77,7 @@ export function ProjectViewer(props: ProjectViewerProps) {
 export function Icon() {
   return (
     <>
-      <img
-        style={{ width: "208px", height: "208px" }}
-        className="fixed -bottom-16 right-0 -z-50 opacity-50"
-        src="/img/rocket.svg"
-        width={208}
-        height={208}
-        alt="rocket"
-      />
-      <img
+      <Image
         style={{ width: "64px", height: "64px" }}
         className="fixed right-20 top-10 -z-50 animate-pulse opacity-90"
         src="/img/star.svg"
@@ -92,7 +85,7 @@ export function Icon() {
         height={64}
         alt="star"
       />
-      <img
+      <Image
         style={{ width: "64px", height: "64px" }}
         className="fixed right-40 top-10 -z-50 animate-pulse opacity-30"
         src="/img/star.svg"
@@ -100,7 +93,7 @@ export function Icon() {
         height={64}
         alt="star"
       />
-      <img
+      <Image
         style={{ width: "64px", height: "64px" }}
         className="top-50 fixed right-32 -z-50 animate-pulse opacity-70"
         src="/img/star.svg"
@@ -108,13 +101,21 @@ export function Icon() {
         height={64}
         alt="star"
       />
-      <img
+      <Image
         style={{ width: "96px", height: "96px" }}
-        className="top-55 fixed right-60 -z-50 opacity-50"
+        className="fixed right-60 top-10 -z-50 opacity-50 max-sm:hidden"
         src="/img/cloud.svg"
         width={96}
         height={96}
         alt="cloud"
+      />
+      <Image
+        style={{ width: "208px", height: "208px" }}
+        className="fixed -bottom-16 right-0 -z-50 opacity-50 max-sm:hidden"
+        src="/img/rocket.svg"
+        width={208}
+        height={208}
+        alt="rocket"
       />
     </>
   );

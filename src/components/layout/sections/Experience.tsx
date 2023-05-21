@@ -6,6 +6,7 @@ import Subtitle from "@/components/elements/Subtitle";
 import { Color } from "@/components/enum/color";
 import Span from "@/components/elements/Span";
 import P from "@/components/elements/P";
+import Image from "next/image";
 
 export default function Experience() {
   return (
@@ -26,9 +27,9 @@ export default function Experience() {
         endDate="Julho 2021"
         description="Auxiliando nas solicitações técnicas de clientes referentes a alterações na rede, monitorando circuitos e realizando gerenciamento proativo da rede, configurando e instalando roteadores e equipamentos de voz, entrando em contato com operadoras e clientes para recuperação de circuitos e configurando acesso aos serviços contratados pelos clientes (VPNs, Acesso Discado, Provedores, Internet, entre outros)."
       />
-      <img
+      <Image
         style={{ width: "192px", height: "192px" }}
-        className="fixed right-10 top-10 -z-50 opacity-50"
+        className="fixed right-10 top-14 -z-50 opacity-50 max-sm:right-0"
         src="/img/name-tag.svg"
         width={192}
         height={192}

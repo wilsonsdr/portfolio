@@ -8,6 +8,7 @@ import { Color } from "@/components/enum/color";
 import Subtitle from "@/components/elements/Subtitle";
 import List, { Item } from "@/components/elements/List";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Education() {
   return (
@@ -86,7 +87,7 @@ export default function Education() {
           </List>
         </SkillContainer>
       </div>
-      <img
+      <Image
         style={{ width: "160px", height: "160px" }}
         className="fixed bottom-10 right-10 -z-50 animate-spin-slow opacity-50"
         src="/img/react.svg"
@@ -109,7 +110,7 @@ export function SkillContainer(props: SkillContainerProps) {
   return (
     <div className="relative flex flex-col flex-wrap gap-4">
       <Subtitle color={Color["secondary-color"]}>{props.name}</Subtitle>
-      <img
+      <Image
         className="absolute -left-10 top-1 h-5 w-5"
         src={props.src}
         alt={props.alt}
