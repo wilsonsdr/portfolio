@@ -13,22 +13,22 @@ export default function Project() {
         <ProjectViewer
           name="Pizzaria Donna"
           description="Landing Page com design de pizaria, mas na realidade é um canal de denúncia contra a violência doméstica"
-          src="https://raw.githubusercontent.com/wilsonsdr/pizzaria-donna/main/public/img/banner-bg.webp"
           href="https://github.com/wilsonsdr/pizzaria-donna"
-          alt="tabuleiro de xadrez"
+          src="/img/project/pizza.jpg"
+          alt="pizza"
         />
         <ProjectViewer
           name="Jogo de xadrez"
           description="Simples jogo de xadrez como uma aplicação de console"
           href="https://github.com/wilsonsdr/jogo-xadrez"
-          src="https://wallpapercave.com/wp/wp2883275.jpg"
-          alt="xadrez"
+          src="/img/project/tabuleiro-xadrez.jpg"
+          alt="tabuleiro-xadrez"
         ></ProjectViewer>
         <ProjectViewer
           name="Bikcraft"
           description="Loja de venda de bicicletas customizadas e seguros"
           href="https://github.com/wilsonsdr/bikcraft"
-          src="https://wilsonsdr.github.io/bikcraft/img/bicicletas/nimbus.jpg"
+          src="/img/project/bike.jpg"
           alt="bicicleta"
         ></ProjectViewer>
       </div>
@@ -55,7 +55,7 @@ export function ProjectViewer(props: ProjectViewerProps) {
             <span className="max-md:hidden">{props.description}</span>
             <Link
               className="mx-auto block rounded-full bg-[#222] p-1 px-10 hover:bg-[#333]"
-              href={`${props.href}`}
+              href={props.href}
               target="_blank"
             >
               Ver Projeto
@@ -66,8 +66,8 @@ export function ProjectViewer(props: ProjectViewerProps) {
           className="h-60 w-full object-cover"
           width={240}
           height={240}
-          src={`${props.src}`}
-          alt={`${props.alt}`}
+          src={props.src}
+          alt={props.alt}
         />
       </div>
     </ShadowCard>
@@ -80,7 +80,7 @@ export function Icon() {
       <Image
         style={{ width: "64px", height: "64px" }}
         className="fixed right-20 top-10 -z-50 animate-pulse opacity-90"
-        src="/img/star.svg"
+        src="/img/decorative/star.svg"
         width={64}
         height={64}
         alt="star"
@@ -88,7 +88,7 @@ export function Icon() {
       <Image
         style={{ width: "64px", height: "64px" }}
         className="fixed right-40 top-10 -z-50 animate-pulse opacity-30"
-        src="/img/star.svg"
+        src="/img/decorative/star.svg"
         width={64}
         height={64}
         alt="star"
@@ -96,7 +96,7 @@ export function Icon() {
       <Image
         style={{ width: "64px", height: "64px" }}
         className="top-50 fixed right-32 -z-50 animate-pulse opacity-70"
-        src="/img/star.svg"
+        src="/img/decorative/star.svg"
         width={64}
         height={64}
         alt="star"
@@ -104,7 +104,7 @@ export function Icon() {
       <Image
         style={{ width: "96px", height: "96px" }}
         className="fixed right-60 top-10 -z-50 opacity-50 max-sm:hidden"
-        src="/img/cloud.svg"
+        src="/img/decorative/cloud.svg"
         width={96}
         height={96}
         alt="cloud"
@@ -112,7 +112,7 @@ export function Icon() {
       <Image
         style={{ width: "208px", height: "208px" }}
         className="fixed -bottom-16 right-0 -z-50 opacity-50 max-sm:hidden"
-        src="/img/rocket.svg"
+        src="/img/decorative/rocket.svg"
         width={208}
         height={208}
         alt="rocket"

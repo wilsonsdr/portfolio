@@ -32,7 +32,11 @@ export default function Education() {
         ></Span>
       </ShadowCard>
       <div className="mt-10 flex flex-1 flex-col gap-10">
-        <SkillContainer name="Habilidades" src="/img/mouse.svg" alt="mouse">
+        <SkillContainer
+          name="Habilidades"
+          src="/img/decorative/mouse.svg"
+          alt="mouse"
+        >
           <List>
             <Item color={Color["highlight-color"]}>Front-end</Item>
             <Item color={Color["primary-color"]}>
@@ -47,7 +51,7 @@ export default function Education() {
             <Item color={Color["primary-color"]}>Git, Jira</Item>
           </List>
         </SkillContainer>
-        <SkillContainer name="Cursos" src="/img/book.svg" alt="book">
+        <SkillContainer name="Cursos" src="/img/decorative/book.svg" alt="book">
           <List>
             <Item color={Color["primary-color"]}>
               <Link
@@ -78,7 +82,11 @@ export default function Education() {
             </Item>
           </List>
         </SkillContainer>
-        <SkillContainer name="Idiomas" src="/img/globe.svg" alt="globe">
+        <SkillContainer
+          name="Idiomas"
+          src="/img/decorative/globe.svg"
+          alt="globe"
+        >
           <List>
             <Item color={Color["highlight-color"]}>Inglês</Item>
             <Item color={Color["primary-color"]}>Avançado</Item>
@@ -90,7 +98,7 @@ export default function Education() {
       <Image
         style={{ width: "160px", height: "160px" }}
         className="fixed bottom-10 right-10 -z-50 animate-spin-slow opacity-50"
-        src="/img/react.svg"
+        src="/img/decorative/react.svg"
         width={160}
         height={160}
         alt="react"

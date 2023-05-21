@@ -30,7 +30,7 @@ export default function Experience() {
       <Image
         style={{ width: "192px", height: "192px" }}
         className="fixed right-10 top-14 -z-50 opacity-50 max-sm:right-0"
-        src="/img/name-tag.svg"
+        src="/img/decorative/name-tag.svg"
         width={192}
         height={192}
         alt="name-tag"

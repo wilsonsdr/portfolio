@@ -29,7 +29,7 @@ export default function Home() {
       <Image
         style={{ width: "260px", height: "260px" }}
         className="fixed -bottom-14 right-10 -z-50 opacity-50"
-        src="/img/guitar.svg"
+        src="/img/decorative/guitar.svg"
         width={240}
         height={240}
         alt="guitar"
