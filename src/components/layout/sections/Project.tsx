@@ -63,7 +63,8 @@ export function ProjectViewer(props: ProjectViewerProps) {
           </div>
         </div>
         <Image
-          className="h-60 w-full object-cover"
+          style={{ width: "100%", height: "240px" }}
+          className="object-cover"
           width={240}
           height={240}
           src={props.src}

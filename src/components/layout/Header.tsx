@@ -106,9 +106,21 @@ export default function Header() {
             </li>
           </ul>
           <div className="cursor-pointer sm:hidden" onClick={menuBurguer}>
-            <span className="mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out"></span>
-            <span className="mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out"></span>
-            <span className="mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out"></span>
+            <span
+              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out ${
+                hiddenMenu ? "" : "translate-y-2 rotate-45"
+              }`}
+            ></span>
+            <span
+              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out ${
+                hiddenMenu ? "" : "opacity-0"
+              }`}
+            ></span>
+            <span
+              className={`mx-auto my-1 block h-1 w-7 rounded-md bg-primary-color transition-all duration-300 ease-in-out ${
+                hiddenMenu ? "" : "-translate-y-2 -rotate-45"
+              }`}
+            ></span>
           </div>
         </nav>
       </header>
