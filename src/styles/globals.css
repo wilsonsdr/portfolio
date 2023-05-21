@@ -1,32 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-@import url("https://fonts.cdnfonts.com/css/apercu");
+@import url(fonts.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --bg-color: #112233;
-    --primary-color: #a7b6c2;
-    --secondary-color: #ffffff;
-    --highlight-color: #f9c784;
-    --info-color: #e0e0e0;
-    --card-color: #f2e8d4;
-    --dark-color: #333333;
-  }
-}
-
-.slick-prev:before,
-.slick-next:before {
-  position: absolute;
-  font-size: 24px;
-  top: 0;
-}
-
-.slick-prev:before {
-  left: -40px;
-}
-
-.slick-next:before {
-  right: -48px;
+:root {
+  --body-color: #123;
+  --primary-color: #a7b6c2;
+  --secondary-color: #fff;
+  --highlight-color: #f9c784;
+  --info-color: #e0e0e0;
+  --card-color: #f2e8d4;
+  --dark-color: #333;
 }

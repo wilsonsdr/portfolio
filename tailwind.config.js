@@ -6,24 +6,18 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      animation: {
-        "spin-slow": "spin 3s linear infinite",
-      },
+    extend: {},
+    colors: {
+      "body-color": "#123",
+      "primary-color": "#a7b6c2",
+      "secondary-color": "#fff",
+      "highlight-color": "#f9c784",
+      "info-color": "#e0e0e0",
+      "card-color": "#f2e8d4",
+      "dark-color": "#333",
     },
     fontFamily: {
-      "nav-menu": ["Libre Baskerville", "serif"],
-      title: ["Libre Baskerville", "serif"],
-      p: ["Apercu", "sans-serif"],
-    },
-    colors: {
-      "bg-color": "var(--bg-color)",
-      "primary-color": "var(--primary-color)",
-      "secondary-color": "var(--secondary-color)",
-      "highlight-color": "var(--highlight-color)",
-      "info-color": "var(--info-color)",
-      "card-color": "var(--card-color)",
-      "dark-color": "var(--dark-color)",
+      logo: ["Sarina", "cursive"],
     },
   },
   plugins: [],

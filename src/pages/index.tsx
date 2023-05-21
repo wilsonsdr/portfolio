@@ -1,14 +1,9 @@
-import Head from "next/head";
-import Header from "./layout/Header";
-import React from "react";
+import Layout from "@/components/layout/Layout";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Wilson Reis</title>
-      </Head>
-      <Header />
-    </>
+    <Layout>
+      <h1 className="text-xs">ola</h1>
+    </Layout>
   );
 }
