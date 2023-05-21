@@ -13,13 +13,13 @@ export default function Home() {
         estar em constante aprendizado.
       </P>
       <P>
-        Tenho experiência tanto em front quanto em back-end, o que me
-        capacita atuar em diversas áreas do desenvolvimento de software.
+        Tenho experiência tanto em front quanto em back-end, o que me capacita
+        atuar em diversas áreas do desenvolvimento de software.
       </P>
       <P>
-        Tenho uma forte convicção de que a tecnologia possui um grande potencial
-        para solucionar problemas e melhorar a vida das pessoas, e estou empenhado
-        em contribuir para essa missão através do meu trabalho.
+        Possuo uma forte convicção de que a tecnologia tem um grande potencial
+        para solucionar problemas e melhorar a vida das pessoas, e estou
+        empenhado em contribuir para essa missão através do meu trabalho.
       </P>
       <P>
         Além da tecnologia, tenho interesse em áreas como filosofia, música,
