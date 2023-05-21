@@ -9,7 +9,7 @@ interface SpanProps {
 
 export default function Span(props: SpanProps) {
   return (
-    <span className={`text-base italic text-info-color ${props.color}`}>
+    <span className={`text-base italic ${props.color}`}>
       {props.startDate} - {props.endDate}
     </span>
   );

@@ -6,7 +6,6 @@ import ShadowCard from "@/components/elements/ShadowCard";
 import Span from "@/components/elements/Span";
 import { Color } from "@/components/enum/color";
 import Subtitle from "@/components/elements/Subtitle";
-import Image from "next/image";
 import List, { Item } from "@/components/elements/List";
 import Link from "next/link";
 
@@ -87,6 +86,14 @@ export default function Education() {
           </List>
         </SkillContainer>
       </div>
+      <img
+        style={{ width: "160px", height: "160px" }}
+        className="fixed bottom-10 right-10 -z-50 animate-spin-slow opacity-50"
+        src="/img/react.svg"
+        width={160}
+        height={160}
+        alt="react"
+      />
     </Section>
   );
 }
@@ -102,7 +109,7 @@ export function SkillContainer(props: SkillContainerProps) {
   return (
     <div className="relative flex flex-col flex-wrap gap-4">
       <Subtitle color={Color["secondary-color"]}>{props.name}</Subtitle>
-      <Image
+      <img
         className="absolute -left-10 top-1 h-5 w-5"
         src={props.src}
         alt={props.alt}

@@ -67,7 +67,7 @@ export default function Header() {
                     ? "text-body-color"
                     : "hover:text-secondary-color"
                 }`}
-                href="#projeto"
+                href="/"
               >
                 projetos
               </Link>

@@ -6,25 +6,33 @@ import P from "@/components/elements/P";
 export default function Home() {
   return (
     <Section>
-      <Title>Olá, meu nome é Wilson</Title>
+      <Title>Wilson Reis</Title>
       <P>
-        Sou apaixonado pelo que faço e estou comprometido em entregar sempre o
-        melhor resultado. Acredito que a chave para ser um bom profissional é
-        estar em constante aprendizado.
+        Apaixonado pelo que faz e comprometido a entregar o melhor resultado,
+        acredita que a chave para ser um bom profissional é estar em constante
+        aprendizado.
       </P>
       <P>
-        Tenho experiência tanto em front quanto em back-end, o que me capacita
-        atuar em diversas áreas do desenvolvimento de software.
+        Possuindo experiência em front e back-end, capaz de atuar em diversas
+        àreas do desenvolvimento de software.
       </P>
       <P>
-        Possuo uma forte convicção de que a tecnologia tem um grande potencial
-        para solucionar problemas e melhorar a vida das pessoas, e estou
-        empenhado em contribuir para essa missão através do meu trabalho.
+        Tendo uma forte convicção que a tecnologia tem um grande potencial para
+        solucionar problemas e melhorar a vida das pessoas, estando empenhado em
+        contribuir para essa missão através do seu trabalho.
       </P>
       <P>
-        Além da tecnologia, tenho interesse em áreas como filosofia, música,
-        xadrez e não dispenso um bom café.
+        Além do trabalho com tecnologia, há interesse em áreas como filosofia,
+        música, xadrez e não dispensa um bom café.
       </P>
+      <img
+        style={{ width: "260px", height: "260px" }}
+        className="fixed -bottom-14 right-10 -z-50 opacity-50"
+        src="/img/guitar.svg"
+        width={240}
+        height={240}
+        alt="guitar"
+      />
     </Section>
   );
 }

@@ -12,8 +12,9 @@ export default function Contact() {
       <P>
         Caso você também seja apaixonado por tecnologia ou tenha interesse em
         algumas das minhas outras áreas de interesse, sinta-se à vontade para me
-        enviar uma mensagem através das minhas redes sociais. Será um prazer
-        trocar conhecimentos e ideias!
+        enviar uma mensagem através das minhas redes sociais, será um prazer
+        trocarmos ideias e conhecimentos, podemos até marcar de tomarmos um
+        café!
       </P>
       <ul className="flex flex-row gap-5 text-3xl">
         <SocialMedia href="https://github.com/wilsonsdr">
@@ -26,6 +27,14 @@ export default function Contact() {
           <FaGooglePlusSquare />
         </SocialMedia>
       </ul>
+      <img
+        style={{ width: "384px", height: "384px" }}
+        className="fixed bottom-10 right-0 -z-50 opacity-50"
+        src="/img/coffe.svg"
+        width={384}
+        height={384}
+        alt="coffe"
+      />
     </Section>
   );
 }

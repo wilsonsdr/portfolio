@@ -16,7 +16,7 @@ export default function Experience() {
         role="Estagiário Future Club"
         startDate="Agosto 2021"
         endDate="Dezembro 2022"
-        description="Participação de projetos importantes na empresa durante o estágio, incluindo o Projeto QQSU, em colaboração com o time da IBM e a startup Paypow, para identificar e analisar métricas relevantes para o Food Court usando o Cognos Analytics, e o Projeto Stardust, desenvolvimento de toda a interface visual e experiência do usuário, de um jogo para os Executivos de Cloud da IBM."
+        description="Participação em projetos importantes na empresa durante o estágio, incluindo o Projeto QQSU, em colaboração com o time da IBM e a startup Paypow, para identificar e analisar métricas relevantes para o Food Court usando o Cognos Analytics, e o Projeto Stardust, desenvolvimento de toda a interface visual e experiência do usuário, de um jogo para os Executivos de Cloud da IBM."
       />
       <Hr />
       <JobList
@@ -25,6 +25,14 @@ export default function Experience() {
         startDate="Maio 2021"
         endDate="Julho 2021"
         description="Auxiliando nas solicitações técnicas de clientes referentes a alterações na rede, monitorando circuitos e realizando gerenciamento proativo da rede, configurando e instalando roteadores e equipamentos de voz, entrando em contato com operadoras e clientes para recuperação de circuitos e configurando acesso aos serviços contratados pelos clientes (VPNs, Acesso Discado, Provedores, Internet, entre outros)."
+      />
+      <img
+        style={{ width: "192px", height: "192px" }}
+        className="fixed right-10 top-10 -z-50 opacity-50"
+        src="/img/name-tag.svg"
+        width={192}
+        height={192}
+        alt="name-tag"
       />
     </Section>
   );

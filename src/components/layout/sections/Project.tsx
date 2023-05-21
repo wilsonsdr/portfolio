@@ -31,6 +31,7 @@ export default function Project() {
           alt="bicicleta"
         ></ProjectViewer>
       </div>
+      <Icon />
     </Section>
   );
 }
@@ -69,5 +70,52 @@ export function ProjectViewer(props: ProjectViewerProps) {
         />
       </div>
     </ShadowCard>
+  );
+}
+
+export function Icon() {
+  return (
+    <>
+      <img
+        style={{ width: "208px", height: "208px" }}
+        className="fixed -bottom-16 right-0 -z-50 opacity-50"
+        src="/img/rocket.svg"
+        width={208}
+        height={208}
+        alt="rocket"
+      />
+      <img
+        style={{ width: "64px", height: "64px" }}
+        className="fixed right-20 top-10 -z-50 animate-pulse opacity-90"
+        src="/img/star.svg"
+        width={64}
+        height={64}
+        alt="star"
+      />
+      <img
+        style={{ width: "64px", height: "64px" }}
+        className="fixed right-40 top-10 -z-50 animate-pulse opacity-30"
+        src="/img/star.svg"
+        width={64}
+        height={64}
+        alt="star"
+      />
+      <img
+        style={{ width: "64px", height: "64px" }}
+        className="top-50 fixed right-32 -z-50 animate-pulse opacity-70"
+        src="/img/star.svg"
+        width={64}
+        height={64}
+        alt="star"
+      />
+      <img
+        style={{ width: "96px", height: "96px" }}
+        className="top-55 fixed right-60 -z-50 opacity-50"
+        src="/img/cloud.svg"
+        width={96}
+        height={96}
+        alt="cloud"
+      />
+    </>
   );
 }
