@@ -1,9 +1,22 @@
 import React from "react";
+import Home from "./sections/Home";
+import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Project from "./sections/Project";
+import Contato from "./sections/Contact";
 
 interface MainProps {
-  children: React.ReactNode;
+  activeSection: string;
 }
 
-export default function Main(props: MainProps) {
-  return <main className="flex flex-col">{props.children}</main>;
+export default function Main({ activeSection }: MainProps) {
+  return (
+    <main className="flex flex-col">
+      {activeSection === "home" && <Home />}
+      {activeSection === "experiência" && <Experience />}
+      {activeSection === "formação" && <Education />}
+      {activeSection === "projetos" && <Project />}
+      {activeSection === "contato" && <Contato />}
+    </main>
+  );
 }

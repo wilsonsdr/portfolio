@@ -1,9 +1,13 @@
-import Layout from "@/components/layout/Layout";
+import Header from "@/components/layout/Header";
+import Head from "next/head";
 
-export default function Home() {
+export default function App() {
   return (
-    <Layout>
-      <h1 className="text-xs">ola</h1>
-    </Layout>
+    <div className="flex flex-row gap-56">
+      <Head>
+        <title>Wilson</title>
+      </Head>
+      <Header />
+    </div>
   );
 }

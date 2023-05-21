@@ -1,14 +1,14 @@
-@import url(fonts.css);
+@import "inter-ui/inter.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --body-color: #123;
-  --primary-color: #a7b6c2;
-  --secondary-color: #fff;
-  --highlight-color: #f9c784;
-  --info-color: #e0e0e0;
-  --card-color: #f2e8d4;
-  --dark-color: #333;
+html {
+  font-family: "Inter", "system-ui";
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", "system-ui";
+  }
 }
