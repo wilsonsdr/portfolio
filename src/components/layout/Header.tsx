@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Main from "./Main";
+import Image from "next/image";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState("0");
@@ -27,10 +28,16 @@ export default function Header() {
       <header className="relative">
         <nav className="fixed py-2 max-sm:left-0 max-sm:top-0 max-sm:z-50 max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-between max-sm:p-4 max-sm:backdrop-blur-md">
           <div
-            className="text-3xl flex items-center gap-4
-          font-logo text-secondary-color sm:hidden"
+            className="flex items-center gap-4 font-logo
+          text-3xl text-secondary-color sm:hidden"
           >
-            <img src="/img/decorative/logo.svg" className="w-10" alt="" />
+            <Image
+              src="/img/decorative/logo.svg"
+              width={40}
+              height={40}
+              className="w-10"
+              alt="logo"
+            />
             <span>wilson</span>
           </div>
 
