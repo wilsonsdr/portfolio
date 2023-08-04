@@ -29,7 +29,7 @@ export default function Header() {
         <nav className="fixed py-2 max-sm:left-0 max-sm:top-0 max-sm:z-50 max-sm:flex max-sm:w-full max-sm:items-center max-sm:justify-between max-sm:p-4 max-sm:backdrop-blur-md">
           <div
             className="flex items-center gap-4 font-logo
-          text-3xl text-secondary-color sm:hidden"
+          text-2xl text-secondary-color sm:hidden"
           >
             <Image
               src="/img/decorative/logo.svg"
@@ -38,7 +38,7 @@ export default function Header() {
               className="w-10"
               alt="logo"
             />
-            <span>wilson</span>
+            <span>portfólio</span>
           </div>
 
           <ul

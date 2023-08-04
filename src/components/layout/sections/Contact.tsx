@@ -11,11 +11,10 @@ export default function Contact() {
     <Section>
       <Title>Contato</Title>
       <P>
-        Caso você também seja apaixonado por tecnologia ou tenha interesse em
-        algumas das minhas outras áreas de interesse, sinta-se à vontade para me
-        enviar uma mensagem através das minhas redes sociais, será um prazer
-        trocarmos ideias e conhecimentos, podemos até marcar de tomarmos um
-        café!
+        Se você também tem paixão por tecnologia, ou simplesmente quer bater um
+        papo, fique à vontade para mandar uma mensagem através das minhas redes
+        sociais, será um prazer te conhecer, quem sabe até combinamos de tomar
+        um café!
       </P>
       <ul className="flex flex-row gap-5 text-3xl">
         <SocialMedia href="https://github.com/wilsonsdr">
@@ -49,7 +48,7 @@ export function SocialMedia(props: SocialMediaProps) {
   return (
     <li>
       <Link
-        className="text-primary-color hover:text-secondary-color"
+        className="text-primary-color hover:text-highlight-color"
         target="_blank"
         href={props.href}
       >

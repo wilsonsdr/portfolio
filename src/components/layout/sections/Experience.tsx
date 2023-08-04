@@ -13,11 +13,19 @@ export default function Experience() {
     <Section>
       <Title>Experiência</Title>
       <JobList
+        company="Intervalor"
+        role="Analista de Desenvolvimento de Sistemas"
+        startDate="Maio 2023"
+        endDate="Atualmente"
+        description="Analisar os chamados em aberto, identificar os possíveis bugs e encaminhar para o time responsável, garantindo a qualidade e performance dos bots de voz e a melhoria contínua dos serviços de atendimento ao cliente, utilizando as mais diversas ferramentas, como exemplo, Jira, Grafana, MinIo, Postman."
+      />
+      <Hr />
+      <JobList
         company="IBM"
         role="Estagiário Future Club"
         startDate="Agosto 2021"
         endDate="Dezembro 2022"
-        description="Participação em projetos importantes na empresa durante o estágio, incluindo o Projeto QQSU, em colaboração com o time da IBM e a startup Paypow, para identificar e analisar métricas relevantes para o Food Court usando o Cognos Analytics, e o Projeto Stardust, desenvolvimento de toda a interface visual e experiência do usuário, de um jogo para os Executivos de Cloud da IBM."
+        description="Desenvolver projetos para o negócio usando ferramentas e serviços da empresa, como o Cognos Analytics, IBM Cloud, IBM Watson Assistant, IBM Z, LinuxONE e o IBM Storage, permitindo criar soluções inovadoras e de alta qualidade para os clientes, como o dashboard para o Food Court e o jogo para os Executivos de Cloud da IBM. Colaborando com equipes internas e externas, identificando as necessidades e as métricas chaves para cada projeto, garantindo a satisfação dos clientes e a eficiência dos processos, além de possibilitar o aprendizado com diferentes profissionais e áreas de atuação."
       />
       <Hr />
       <JobList
@@ -25,7 +33,7 @@ export default function Experience() {
         role="Estagiário de Telecomunicações"
         startDate="Maio 2021"
         endDate="Julho 2021"
-        description="Auxiliando nas solicitações técnicas de clientes referentes a alterações na rede, monitorando circuitos e realizando gerenciamento proativo da rede, configurando e instalando roteadores e equipamentos de voz, entrando em contato com operadoras e clientes para recuperação de circuitos e configurando acesso aos serviços contratados pelos clientes (VPNs, Acesso Discado, Provedores, Internet, entre outros)."
+        description="Realizar suporte técnico aos clientes em relação a alterações na rede, monitorar e gerenciar a rede de forma proativa, configurar e instalar roteadores e equipamentos de voz, entrar em contato com operadoras e clientes para recuperar circuitos em caso de falhas ou interrupções, acessando os serviços contratados pelos clientes, tais como VPNs, Acesso Discado, Provedores, Internet, entre outros, garantindo assim a qualidade e a segurança da conexão."
       />
       <Image
         style={{ width: "192px", height: "192px" }}

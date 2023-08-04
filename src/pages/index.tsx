@@ -9,7 +9,7 @@ export default function App() {
           name="description"
           content="Portfolio com minhas experiências profissionais, formação acadêmica, projetos pessoais e links para contato"
         />
-        <title>Wilson Reis</title>
+        <title>Wilson Souto dos Reis</title>
         <link rel="icon" type="image/svg" href="/img/decorative/logo.svg"></link>
       </Head>
       <Header />

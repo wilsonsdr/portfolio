@@ -15,7 +15,7 @@ export default function Education() {
     <Section>
       <Title>Formação</Title>
       <P>
-        Mantendo-se atualizado com cursos online, minha mais recente experiência
+        Mantendo-se atualizado com cursos online, sua mais recente experiência
         acadêmica foi o Tecnólogo.
       </P>
       <ShadowCard>

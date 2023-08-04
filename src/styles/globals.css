@@ -1,5 +1,5 @@
 @import "inter-ui/inter.css";
-@import url("https://fonts.cdnfonts.com/css/g-gelang-script");
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

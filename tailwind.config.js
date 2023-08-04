@@ -20,7 +20,7 @@ module.exports = {
         "spin-slow": "spin 3s linear infinite",
       },
       fontFamily: {
-        logo: ["g Gelang Script", "sans-serif"],
+        logo: ["Permanent Marker", "cursive"],
       },
     },
   },

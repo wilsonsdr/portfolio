@@ -7,24 +7,24 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Section>
-      <Title>Quem sou</Title>
+      <Title>Wilson Reis</Title>
       <P>
-        Meu nome é Wilson Reis, sou apaixonado pelo que faço e comprometido a
-        entregar o melhor resultado, acredito que a chave para ser um bom
-        profissional é estar em constante aprendizado.
+        Apaixonado pelo que faz e comprometido a entregar o melhor
+        resultado, acreditando que a chave para ser um bom profissional é estar
+        em constante aprendizado.
       </P>
       <P>
         Possuindo experiência em front e back-end, capaz de atuar em diversas
-        àreas do desenvolvimento de software.
+        áreas do desenvolvimento de software.
       </P>
       <P>
-        Tendo uma forte convicção que a tecnologia tem um grande potencial para
+        Com uma forte convicção que a tecnologia tem um grande potencial para
         solucionar problemas e melhorar a vida das pessoas, estando empenhado em
-        contribuir para essa missão através do meu trabalho.
+        contribuir para esse objetivo através do seu trabalho.
       </P>
       <P>
-        Além do trabalho com tecnologia, tenho interesse em áreas como
-        filosofia, música, xadrez e não dispenso um bom café.
+        Além do trabalho com tecnologia, tendo interesse em áreas como
+        filosofia, música, xadrez e não dispensa um bom café.
       </P>
       <Image
         style={{ width: "260px", height: "260px" }}
