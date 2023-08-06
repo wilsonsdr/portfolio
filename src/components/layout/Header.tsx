@@ -32,7 +32,7 @@ export default function Header() {
           text-2xl text-secondary-color sm:hidden"
           >
             <Image
-              src="/img/decorative/logo.svg"
+              src="/img/decorative/icon.svg"
               width={40}
               height={40}
               className="w-10"
@@ -42,7 +42,7 @@ export default function Header() {
           </div>
 
           <ul
-            className={`flex flex-col gap-4 text-xl text-primary-color max-sm:fixed max-sm:left-0 max-sm:top-[63px] max-sm:w-full max-sm:flex-col max-sm:rounded-b-md max-sm:bg-primary-color max-sm:p-4 max-sm:text-right ${
+            className={`flex flex-col gap-4 text-xl text-primary-color max-sm:fixed max-sm:left-0 max-sm:top-[73px] max-sm:w-full max-sm:flex-col max-sm:rounded-b-md max-sm:bg-primary-color max-sm:p-4 max-sm:text-right ${
               hiddenMenu ? "max-sm:hidden" : "block"
             }`}
           >

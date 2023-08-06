@@ -7,11 +7,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Section>
-      <Title>Wilson Reis</Title>
+      <Title>Wilson Souto dos Reis</Title>
       <P>
-        Apaixonado pelo que faz e comprometido a entregar o melhor
-        resultado, acreditando que a chave para ser um bom profissional é estar
-        em constante aprendizado.
+        Apaixonado pelo que faz e comprometido a entregar o melhor resultado,
+        acreditando que a chave para ser um bom profissional é estar em
+        constante aprendizado.
       </P>
       <P>
         Possuindo experiência em front e back-end, capaz de atuar em diversas
