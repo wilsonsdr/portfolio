@@ -6,7 +6,7 @@ interface TitleProps {
 
 export default function Title(props: TitleProps) {
   return (
-    <h1 className="text-3xl font-extrabold tracking-wide text-secondary-color w-9/12">
+    <h1 className="text-3xl font-extrabold tracking-wide text-secondary-color">
       {props.children}
     </h1>
   );
