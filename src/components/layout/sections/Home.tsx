@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <Section>
-      <Title>Wilson R.</Title>
+      <Title>Wilson Reis</Title>
       <P>
         Apaixonado pelo que faz e comprometido a entregar o melhor resultado,
         acreditando que a chave para ser um bom profissional é estar em
