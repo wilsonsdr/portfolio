@@ -40,15 +40,15 @@ export default function Education() {
           <List>
             <Item color={Color["highlight-color"]}>Front-end</Item>
             <Item color={Color["primary-color"]}>
-              HTML, CSS, Bootstrap, SASS, JavaScript, React, Tailwind,
-              Typescript, NextJS
+              HTML, CSS, SASS, Bootstrap, JavaScript, TypeScript, TailwindCSS,
+              React.js
             </Item>
             <Item color={Color["highlight-color"]}>Back-end</Item>
-            <Item color={Color["primary-color"]}>.NET</Item>
+            <Item color={Color["primary-color"]}>Next.js, Node.js, C#</Item>
             <Item color={Color["highlight-color"]}>Banco de dados</Item>
             <Item color={Color["primary-color"]}>MySQL, MongoDB</Item>
             <Item color={Color["highlight-color"]}>Complementar</Item>
-            <Item color={Color["primary-color"]}>Git, Jira</Item>
+            <Item color={Color["primary-color"]}>Git, Jira, Postman</Item>
           </List>
         </SkillContainer>
         <SkillContainer name="Cursos" src="/img/decorative/book.svg" alt="book">

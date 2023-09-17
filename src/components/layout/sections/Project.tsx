@@ -12,7 +12,7 @@ export default function Project() {
       <div className="flex flex-col gap-10 max-sm:pb-8">
         <ProjectViewer
           name="Pizzaria Donna"
-          description="Landing Page com design de pizaria, mas na realidade é um canal de denúncia contra a violência doméstica"
+          description="Landing page com design de pizaria, mas na realidade é um canal de denúncia contra a violência doméstica"
           href="https://github.com/wilsonsdr/pizzaria-donna"
           src="/img/project/pizza.jpg"
           alt="pizza"

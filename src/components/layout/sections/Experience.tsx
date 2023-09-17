@@ -17,7 +17,8 @@ export default function Experience() {
         role="Analista de Desenvolvimento de Sistemas"
         startDate="Maio 2023"
         endDate="Atualmente"
-        description="Analisar os chamados em aberto, identificar os possíveis bugs e encaminhar para o time responsável, garantindo a qualidade e performance dos bots de voz e a melhoria contínua dos serviços de atendimento ao cliente, utilizando as mais diversas ferramentas, como exemplo, Jira, Grafana, MinIo, Postman."
+        description="Atuando diretamente nas correções e melhorias identificadas nos bots, assim como na implementação de novos áudios e resolução de eventuais falhas. Essas ações, resultaram em uma redução de 70% nos chamados em aberto, promovendo uma melhoria contínua nos serviços oferecidos."
+        skills="JavaScript · Git · TypeScript · MySQL · Node.js · Postman · Jira · Grafana · Kibana · MinIO · Jenkins · Jaeger"
       />
       <Hr />
       <JobList
@@ -25,7 +26,8 @@ export default function Experience() {
         role="Estagiário Future Club"
         startDate="Agosto 2021"
         endDate="Dezembro 2022"
-        description="Desenvolver projetos para o negócio usando ferramentas e serviços da empresa, como o Cognos Analytics, IBM Cloud, IBM Watson Assistant, IBM Z, LinuxONE e o IBM Storage, permitindo criar soluções inovadoras e de alta qualidade para os clientes, como o dashboard para o Food Court e o jogo para os Executivos de Cloud da IBM. Colaborando com equipes internas e externas, identificando as necessidades e as métricas chaves para cada projeto, garantindo a satisfação dos clientes e a eficiência dos processos, além de possibilitar o aprendizado com diferentes profissionais e áreas de atuação."
+        description="Contato com as mais diversas ferramentas e serviços da empresa, permitindo criar soluções inovadores e de alta qualidade. Um projeto que destaco é o 'Pizzaria Donna', fui responsável por desenvolver uma landing page com um design temático de pizzaria, integrada ao IBM Watson Assistant. Esta integração permitiu a simulação de denúncias contra a violência doméstica, utilizando a tecnologia para promover a conscientização e a assistência a um problema tão crucial."
+        skills="HTML · CSS · JavaScript · User Interface (UI) · User Experience (UX) · IBM Cognos Analytics · IBM Cloud · IBM Watson Assistant · IBM Z · IBM LinuxONE · IBM Storage"
       />
       <Hr />
       <JobList
@@ -33,7 +35,8 @@ export default function Experience() {
         role="Estagiário de Telecomunicações"
         startDate="Maio 2021"
         endDate="Julho 2021"
-        description="Realizar suporte técnico aos clientes em relação a alterações na rede, monitorar e gerenciar a rede de forma proativa, configurar e instalar roteadores e equipamentos de voz, entrar em contato com operadoras e clientes para recuperar circuitos em caso de falhas ou interrupções, acessando os serviços contratados pelos clientes, tais como VPNs, Acesso Discado, Provedores, Internet, entre outros, garantindo assim a qualidade e a segurança da conexão."
+        description="Realizar suporte técnico aos clientes, configurando e instalando roteadores e equipamentos de voz, e também monitorar e gerenciar as alterações na rede, entrando em contato com as operadoras para recuperar o circuito em caso de falhas ou interrupções."
+        skills="SolarWinds Orion · Putty · Cacti · Topdesk"
       />
       <Image
         style={{ width: "192px", height: "192px" }}
@@ -53,6 +56,7 @@ interface JobListProps {
   startDate: string;
   endDate: string;
   description: string;
+  skills: string,
 }
 
 export function JobList(props: JobListProps) {
@@ -67,6 +71,7 @@ export function JobList(props: JobListProps) {
         endDate={props.endDate}
       />
       <P>{props.description}</P>
+      <P><strong>Competências:</strong> {props.skills}</P>
     </>
   );
 }
