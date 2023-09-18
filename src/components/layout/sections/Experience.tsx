@@ -26,7 +26,7 @@ export default function Experience() {
         role="Estagiário Future Club"
         startDate="Agosto 2021"
         endDate="Dezembro 2022"
-        description="Contato com as mais diversas ferramentas e serviços da empresa, permitindo criar soluções inovadores e de alta qualidade. Um projeto que destaco é o 'Pizzaria Donna', fui responsável por desenvolver uma landing page com um design temático de pizzaria, integrada ao IBM Watson Assistant. Esta integração permitiu a simulação de denúncias contra a violência doméstica, utilizando a tecnologia para promover a conscientização e a assistência a um problema tão crucial."
+        description="Contato com as mais diversas ferramentas e serviços da empresa, permitindo criar soluções inovadoras e de grande impacto. Um projeto em destaque é o 'Pizzaria Donna', uma landing page com um design temático de pizzaria, integrada ao IBM Watson Assistant. Esta integração permitiu a simulação de denúncias contra a violência doméstica, utilizando a tecnologia para promover a conscientização e a assistência a um problema tão crucial."
         skills="HTML · CSS · JavaScript · User Interface (UI) · User Experience (UX) · IBM Cognos Analytics · IBM Cloud · IBM Watson Assistant · IBM Z · IBM LinuxONE · IBM Storage"
       />
       <Hr />
@@ -56,7 +56,7 @@ interface JobListProps {
   startDate: string;
   endDate: string;
   description: string;
-  skills: string,
+  skills: string;
 }
 
 export function JobList(props: JobListProps) {
@@ -71,7 +71,9 @@ export function JobList(props: JobListProps) {
         endDate={props.endDate}
       />
       <P>{props.description}</P>
-      <P><strong>Competências:</strong> {props.skills}</P>
+      <P>
+        <strong>Competências:</strong> {props.skills}
+      </P>
     </>
   );
 }

@@ -38,16 +38,22 @@ export default function Education() {
           alt="mouse"
         >
           <List>
-            <Item color={Color["highlight-color"]}>Front-end</Item>
+            <Item color={Color["highlight-color"]}>
+              Desenvolvimento Front-end
+            </Item>
             <Item color={Color["primary-color"]}>
               HTML, CSS, SASS, Bootstrap, JavaScript, TypeScript, TailwindCSS,
-              React.js
+              React.js, Next.js
             </Item>
-            <Item color={Color["highlight-color"]}>Back-end</Item>
-            <Item color={Color["primary-color"]}>Next.js, Node.js, C#</Item>
-            <Item color={Color["highlight-color"]}>Banco de dados</Item>
-            <Item color={Color["primary-color"]}>MySQL, MongoDB</Item>
-            <Item color={Color["highlight-color"]}>Complementar</Item>
+            <Item color={Color["highlight-color"]}>
+              Desenvolvimento Back-end
+            </Item>
+            <Item color={Color["primary-color"]}>
+              Node.js, C#, MySQL, MongoDB
+            </Item>
+            <Item color={Color["highlight-color"]}>
+              Ferramentas de Desenvolvimento
+            </Item>
             <Item color={Color["primary-color"]}>Git, Jira, Postman</Item>
           </List>
         </SkillContainer>

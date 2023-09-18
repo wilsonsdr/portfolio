@@ -12,9 +12,8 @@ export default function Contact() {
       <Title>Contato</Title>
       <P>
         Se você também tem paixão por tecnologia, ou simplesmente quer bater um
-        papo, fique à vontade para mandar uma mensagem através das minhas redes
-        sociais, será um prazer te conhecer, quem sabe até combinamos de tomar
-        um café!
+        papo, fique à vontade para mandar uma mensagem através de suas redes
+        sociais!
       </P>
       <ul className="flex flex-row gap-5 text-3xl">
         <SocialMedia href="https://github.com/wilsonsdr">

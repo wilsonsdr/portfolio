@@ -10,21 +10,18 @@ export default function Home() {
       <Title>Wilson Reis</Title>
       <P>
         Apaixonado pelo que faz e comprometido a entregar o melhor resultado,
-        acreditando que a chave para ser um bom profissional é estar em
-        constante aprendizado.
-      </P>
-      <P>
-        Possuindo experiência em front e back-end, capaz de atuar em diversas
+        possuindo experiência em front e back-end, capaz de atuar em diversas
         áreas do desenvolvimento de software.
       </P>
       <P>
-        Com uma forte convicção que a tecnologia tem um grande potencial para
-        solucionar problemas e melhorar a vida das pessoas, estando empenhado em
-        contribuir para esse objetivo através do seu trabalho.
+        Acreditando que a chave para ser um bom profissional é estar em
+        constante aprendizado, e também que a tecnologia tem um grande papel
+        para solucionar problemas e melhorar a vida das pessoas, tendo como
+        objetivo contribuir com isso atráves do seu trabalho.
       </P>
       <P>
-        Além do trabalho com tecnologia, tendo interesse em áreas como
-        filosofia, música, xadrez e não dispensa um bom café.
+        Além do trabalho com tecnologia, interessado em áreas como filosofia,
+        música, xadrez e não dispenso um bom café.
       </P>
       <Image
         style={{ width: "260px", height: "260px" }}
