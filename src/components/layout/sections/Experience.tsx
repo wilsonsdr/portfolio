@@ -18,7 +18,7 @@ export default function Experience() {
         startDate="Maio 2023"
         endDate="Atualmente"
         description="Atuando diretamente nas correções e melhorias identificadas nos bots, assim como na implementação de novos áudios e resolução de eventuais falhas. Essas ações, resultaram em uma redução de 70% nos chamados em aberto, promovendo uma melhoria contínua nos serviços oferecidos."
-        skills="JavaScript · Git · TypeScript · MySQL · Node.js · Postman · Jira · Grafana · Kibana · MinIO · Jenkins · Jaeger"
+        skills="Kubernetes · MicroSIP · JavaScript · Git · TypeScript · MySQL · Node.js · Postman · Jira · Grafana · Kibana · MinIO · Jenkins · Jaeger"
       />
       <Hr />
       <JobList

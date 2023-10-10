@@ -3,7 +3,7 @@ import Home from "./sections/Home";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
 import Project from "./sections/Project";
-import Contato from "./sections/Contact";
+import Contact from "./sections/Contact";
 
 interface MainProps {
   activeSection: string;
@@ -16,7 +16,7 @@ export default function Main({ activeSection }: MainProps) {
       {activeSection === "experiência" && <Experience />}
       {activeSection === "formação" && <Education />}
       {activeSection === "projetos" && <Project />}
-      {activeSection === "contato" && <Contato />}
+      {activeSection === "contato" && <Contact />}
     </main>
   );
 }
