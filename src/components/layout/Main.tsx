@@ -14,7 +14,7 @@ export default function Main({ activeSection }: MainProps) {
     <main className="h-full w-full">
       {activeSection === "about" && <About />}
       {activeSection === "experience" && <Experience />}
-      {activeSection === "formação" && <Education />}
+      {activeSection === "education" && <Education />}
       {activeSection === "projetos" && <Project />}
       {activeSection === "contato" && <Contact />}
     </main>
