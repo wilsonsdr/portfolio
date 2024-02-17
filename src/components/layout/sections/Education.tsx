@@ -79,7 +79,7 @@ export function SkillContainer(props: SkillContainerProps) {
   return (
     <div className='relative flex flex-col flex-wrap gap-4'>
       <Subtitle color={Color['secondary-color']}>{props.name}</Subtitle>
-      <Image className='absolute -left-10 top-1 h-5 w-5' src={props.src} alt={props.alt} width={20} height={20} />
+      <Image className='absolute -left-10 top-2 h-5 w-5' src={props.src} alt={props.alt} width={20} height={20} />
       {props.children}
     </div>
   );
