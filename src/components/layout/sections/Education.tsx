@@ -6,7 +6,7 @@ import ShadowCard from "@/components/elements/ShadowCard";
 import Span from "@/components/elements/Span";
 import { Color } from "@/components/enum/color";
 import Subtitle from "@/components/elements/Subtitle";
-import List, { Item } from "@/components/elements/List";
+import ListContainer, { ListItem } from "@/components/elements/List";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -37,29 +37,29 @@ export default function Education() {
           src="/img/decorative/mouse.svg"
           alt="mouse"
         >
-          <List>
-            <Item color={Color["highlight-color"]}>
+          <ListContainer>
+            <ListItem color={Color["highlight-color"]}>
               Desenvolvimento Front-end
-            </Item>
-            <Item color={Color["primary-color"]}>
+            </ListItem>
+            <ListItem color={Color["primary-color"]}>
               HTML, CSS, SASS, Bootstrap, JavaScript, TypeScript, TailwindCSS,
               React.js, Next.js
-            </Item>
-            <Item color={Color["highlight-color"]}>
+            </ListItem>
+            <ListItem color={Color["highlight-color"]}>
               Desenvolvimento Back-end
-            </Item>
-            <Item color={Color["primary-color"]}>
+            </ListItem>
+            <ListItem color={Color["primary-color"]}>
               Node.js, C#, MySQL, MongoDB
-            </Item>
-            <Item color={Color["highlight-color"]}>
+            </ListItem>
+            <ListItem color={Color["highlight-color"]}>
               Ferramentas de Desenvolvimento
-            </Item>
-            <Item color={Color["primary-color"]}>Git, Jira, Postman</Item>
-          </List>
+            </ListItem>
+            <ListItem color={Color["primary-color"]}>Git, Jira, Postman</ListItem>
+          </ListContainer>
         </SkillContainer>
         <SkillContainer name="Cursos" src="/img/decorative/book.svg" alt="book">
-          <List>
-          <Item color={Color["primary-color"]}>
+          <ListContainer>
+          <ListItem color={Color["primary-color"]}>
               <Link
                 target="_blank"
                 className="hover:text-highlight-color"
@@ -67,8 +67,8 @@ export default function Education() {
               >
                 Do Zero ao Fullstack
               </Link>
-            </Item>
-            <Item color={Color["primary-color"]}>
+            </ListItem>
+            <ListItem color={Color["primary-color"]}>
               <Link
                 target="_blank"
                 className="hover:text-highlight-color"
@@ -76,8 +76,8 @@ export default function Education() {
               >
                 C# Programação Orientada a Objetos
               </Link>
-            </Item>
-            <Item color={Color["primary-color"]}>
+            </ListItem>
+            <ListItem color={Color["primary-color"]}>
               <Link
                 target="_blank"
                 className="hover:text-highlight-color"
@@ -85,20 +85,20 @@ export default function Education() {
               >
                 Web Design, UX/UI Design, HTML, CSS, JavaScript e React
               </Link>
-            </Item>
-          </List>
+            </ListItem>
+          </ListContainer>
         </SkillContainer>
         <SkillContainer
           name="Idiomas"
           src="/img/decorative/globe.svg"
           alt="globe"
         >
-          <List>
-            <Item color={Color["highlight-color"]}>Inglês</Item>
-            <Item color={Color["primary-color"]}>Avançado</Item>
-            <Item color={Color["highlight-color"]}>Espanhol</Item>
-            <Item color={Color["primary-color"]}>Básico</Item>
-          </List>
+          <ListContainer>
+            <ListItem color={Color["highlight-color"]}>Inglês</ListItem>
+            <ListItem color={Color["primary-color"]}>Avançado</ListItem>
+            <ListItem color={Color["highlight-color"]}>Espanhol</ListItem>
+            <ListItem color={Color["primary-color"]}>Básico</ListItem>
+          </ListContainer>
         </SkillContainer>
       </div>
       <Image
