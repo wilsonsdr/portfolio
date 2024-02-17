@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   const [activeLink, setActiveLink] = useState("0");
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("about");
   const [hiddenMenu, setHiddenMenu] = useState(true);
 
   const handleClick = (activeLink: string, activeSection: string) => {
@@ -52,15 +52,15 @@ export default function Header() {
             ></li>
             <li>
               <Link
-                onClick={() => handleClick("0", "home")}
+                onClick={() => handleClick("0", "about")}
                 className={`inline-block px-4 py-1 max-sm:p-0 ${
-                  activeSection === "home"
+                  activeSection === "about"
                     ? "text-body-color max-sm:text-dark-color"
                     : "hover:text-secondary-color max-sm:text-info-color max-sm:hover:text-secondary-color"
                 }`}
                 href="/"
               >
-                home
+                about
               </Link>
             </li>
             <li>

@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./sections/Home";
+import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
 import Project from "./sections/Project";
@@ -12,7 +12,7 @@ interface MainProps {
 export default function Main({ activeSection }: MainProps) {
   return (
     <main className="h-full w-full">
-      {activeSection === "home" && <Home />}
+      {activeSection === "about" && <About />}
       {activeSection === "experiência" && <Experience />}
       {activeSection === "formação" && <Education />}
       {activeSection === "projetos" && <Project />}
