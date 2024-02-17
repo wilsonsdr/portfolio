@@ -14,7 +14,7 @@ export default function Education() {
   return (
     <Section>
       <Title>Education</Title>
-      <P>I keep myself updated with online courses. My most recent academic experience was completing an Associate's degree</P>
+      <P>I keep myself updated with online courses. My most recent academic experience was completing an Associate's degree.</P>
       <ShadowCard>
         <span className='text-bg-color absolute top-[-15px] w-44 rounded-full bg-highlight-color p-1 text-center'>Associate's degree</span>
         <h3 className='mt-2 font-bold'>Systems Analysis and Development</h3>

@@ -38,7 +38,7 @@ export default function Header() {
               className="w-10"
               alt="logo"
             />
-            <span>portfólio</span>
+            <span>portfolio</span>
           </div>
 
           <ul
@@ -104,15 +104,15 @@ export default function Header() {
             </li>
             <li>
               <Link
-                onClick={() => handleClick("80", "contato")}
+                onClick={() => handleClick("80", "contact")}
                 className={`inline-block px-4 py-1 max-sm:p-0 ${
-                  activeSection === "contato"
+                  activeSection === "contact"
                     ? "text-body-color max-sm:text-dark-color"
                     : "hover:text-secondary-color max-sm:text-info-color max-sm:hover:text-secondary-color"
                 }`}
                 href="/"
               >
-                contato
+                contact
               </Link>
             </li>
           </ul>
