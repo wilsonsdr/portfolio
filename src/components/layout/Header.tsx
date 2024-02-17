@@ -65,15 +65,15 @@ export default function Header() {
             </li>
             <li>
               <Link
-                onClick={() => handleClick("20", "experiência")}
+                onClick={() => handleClick("20", "experience")}
                 className={`inline-block px-4 py-1 max-sm:p-0 ${
-                  activeSection === "experiência"
+                  activeSection === "experience"
                     ? "text-body-color max-sm:text-dark-color"
                     : "hover:text-secondary-color max-sm:text-info-color max-sm:hover:text-secondary-color"
                 }`}
                 href="/"
               >
-                experiência
+                experience
               </Link>
             </li>
             <li>

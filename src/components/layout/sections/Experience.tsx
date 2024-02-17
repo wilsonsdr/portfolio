@@ -1,51 +1,53 @@
-import React from "react";
-import Section from "../../elements/Section";
-import Title from "@/components/elements/Title";
-import Hr from "@/components/elements/Hr";
-import Subtitle from "@/components/elements/Subtitle";
-import { Color } from "@/components/enum/color";
-import Span from "@/components/elements/Span";
-import P from "@/components/elements/P";
-import Image from "next/image";
+import React from 'react';
+import Section from '../../elements/Section';
+import Title from '@/components/elements/Title';
+import Hr from '@/components/elements/Hr';
+import Subtitle from '@/components/elements/Subtitle';
+import { Color } from '@/components/enum/color';
+import Span from '@/components/elements/Span';
+import P from '@/components/elements/P';
+import Image from 'next/image';
+import ListContainer, { ListItem } from '@/components/elements/List';
+import { List } from '@/components/enum/list';
 
 export default function Experience() {
   return (
     <Section>
-      <Title>Experiência</Title>
+      <Title>Experience</Title>
       <JobList
-        company="Intervalor"
-        role="Analista de Desenvolvimento de Sistemas"
-        startDate="Maio 2023"
-        endDate="Atualmente"
-        description="Atuando diretamente nas correções e melhorias identificadas nos bots, assim como na implementação de novos áudios e resolução de eventuais falhas. Essas ações, resultaram em uma redução de 70% nos chamados em aberto, promovendo uma melhoria contínua nos serviços oferecidos."
-        skills="Kubernetes · MicroSIP · JavaScript · Git · TypeScript · MySQL · Node.js · Postman · Jira · Grafana · Kibana · MinIO · Jenkins · Jaeger"
+        company='Intervalor'
+        role='Systems Analyst'
+        startDate='May 2023'
+        endDate='Present'
+        description='Acting as the sole responsible for the application developed in Node.js at a credit recovery company, leading all stages of the operation and continuous improvement of micro-services, responsible for managing data from third-party team reports, and ensuring the communication and functioning of messaging services. My responsibilities include:'
+        responsibilities={[
+          "Developing and analyzing new projects within the application for each company client, focusing on the scalability and efficiency of the implemented solutions, according to each client's needs.",
+          'Implementing new solutions and improvements in the application, always aiming to enhance its functionality, performance, usability, and the use of good security practices in data handling.',
+          'Ensuring that information is inserted in the database and sent to internal and external APIs, prioritizing data integrity and security.',
+          'Analyzing possible bugs, issues, or any eventualities in the application or database, working together and maintaining daily contact with the Business Intelligence team to identify, resolve, and prevent future issues.',
+          'Actively participating in meetings or discussions to contribute insights and innovative ideas for application enhancement, collaborating with other teams or departments within the company.',
+        ]}
+        skills='Node.js · TypeScript · JavaScript · Git · Postman · MySQL · Jira · RabbitMQ · Kubernetes · Jenkins · Jaeger · Kibana · MinIO · Grafana · MicroSIP'
       />
       <Hr />
       <JobList
-        company="IBM"
-        role="Estagiário Future Club"
-        startDate="Agosto 2021"
-        endDate="Dezembro 2022"
-        description="Contato com as mais diversas ferramentas e serviços da empresa, permitindo criar soluções inovadoras e de grande impacto. Um projeto em destaque é o 'Pizzaria Donna', uma landing page com um design temático de pizzaria, integrada ao IBM Watson Assistant. Esta integração permitiu a simulação de denúncias contra a violência doméstica, utilizando a tecnologia para promover a conscientização e a assistência a um problema tão crucial."
-        skills="HTML · CSS · JavaScript · User Interface (UI) · User Experience (UX) · IBM Cognos Analytics · IBM Cloud · IBM Watson Assistant · IBM Z · IBM LinuxONE · IBM Storage"
+        company='IBM'
+        role='Future Club Intern'
+        startDate='August 2021'
+        endDate='Dezember 2022'
+        description='Engaging with a wide range of company tools and services, allowing for the creation of innovative and impactful solutions. One standout project is Pizzaria Donna, a landing page with a pizzeria-themed design, integrated with IBM Watson Assistant. This integration enabled the simulation of reports of domestic violence, using technology to promote awareness and aid for such a crucial issue.'
+        skills='JavaScript · HTML · CSS · IBM Watson Assistant · IBM Cognos Analytics · IBM LinuxONE · IBM Cloud · IBM Z · User Experience (UX) · User Interface (UI) · IBM Storage'
       />
       <Hr />
       <JobList
-        company="RTM"
-        role="Estagiário de Telecomunicações"
-        startDate="Maio 2021"
-        endDate="Julho 2021"
-        description="Realizar suporte técnico aos clientes, configurando e instalando roteadores e equipamentos de voz, e também monitorar e gerenciar as alterações na rede, entrando em contato com as operadoras para recuperar o circuito em caso de falhas ou interrupções."
-        skills="SolarWinds Orion · Putty · Cacti · Topdesk"
+        company='RTM'
+        role='Telecommunications Intern'
+        startDate='May 2021'
+        endDate='Jul 2021'
+        description='Providing technical support to clients, configuring and installing routers and voice equipment, as well as monitoring and managing network changes, and liaising with service providers to restore circuits in the event of failures or interruptions.'
+        skills='Putty · Cacti · Topdesk · SolarWinds Orion'
       />
-      <Image
-        style={{ width: "192px", height: "192px" }}
-        className="fixed right-10 top-14 -z-50 opacity-50 max-sm:right-0"
-        src="/img/decorative/name-tag.svg"
-        width={192}
-        height={192}
-        alt="name-tag"
-      />
+      <Image style={{ width: '192px', height: '192px' }} className='fixed right-10 top-14 -z-50 opacity-50 max-sm:right-0' src='/img/decorative/name-tag.svg' width={192} height={192} alt='name-tag' />
     </Section>
   );
 }
@@ -57,22 +59,28 @@ interface JobListProps {
   endDate: string;
   description: string;
   skills: string;
+  responsibilities?: string[];
 }
 
 export function JobList(props: JobListProps) {
   return (
     <>
-      <Subtitle color={Color["highlight-color"]}>
+      <Subtitle color={Color['highlight-color']}>
         {props.company} - {props.role}
       </Subtitle>
-      <Span
-        color={Color["info-color"]}
-        startDate={props.startDate}
-        endDate={props.endDate}
-      />
+      <Span color={Color['info-color']} startDate={props.startDate} endDate={props.endDate} />
       <P>{props.description}</P>
+      {props.responsibilities && props.responsibilities.length > 0 && (
+        <ListContainer>
+          {props.responsibilities.map((responsibility, index) => (
+            <ListItem color={Color['primary-color']} disc={List.disc} key={index}>
+              {responsibility}
+            </ListItem>
+          ))}
+        </ListContainer>
+      )}
       <P>
-        <strong>Competências:</strong> {props.skills}
+        <strong>Skills:</strong> {props.skills}
       </P>
     </>
   );

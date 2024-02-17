@@ -13,7 +13,7 @@ export default function Main({ activeSection }: MainProps) {
   return (
     <main className="h-full w-full">
       {activeSection === "about" && <About />}
-      {activeSection === "experiência" && <Experience />}
+      {activeSection === "experience" && <Experience />}
       {activeSection === "formação" && <Education />}
       {activeSection === "projetos" && <Project />}
       {activeSection === "contato" && <Contact />}
