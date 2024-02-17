@@ -27,8 +27,8 @@ export default function Contact() {
         </SocialMedia>
       </ul>
       <Image
-        style={{ width: "384px", height: "384px" }}
-        className="fixed -bottom-20 -right-0 -z-50 opacity-80 max-sm:-right-20"
+        style={{ width: "420px", height: "384px" }}
+        className="fixed -bottom-20 -right-0 -z-50 opacity-50 max-sm:-right-20"
         src="/img/decorative/coffe.svg"
         width={384}
         height={384}

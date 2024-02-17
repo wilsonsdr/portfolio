@@ -49,7 +49,7 @@ export function ProjectViewer(props: ProjectViewerProps) {
   return (
     <ShadowCard>
       <div className="relative">
-        <div className="absolute left-0 top-0 h-full w-full opacity-0 hover:bg-[#000] hover:opacity-90">
+        <div className="absolute left-0 top-0 h-full w-full opacity-0 hover:bg-[#000] hover:opacity-90 transition-all duration-300">
           <div className="absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 transform flex-col gap-4 px-6 py-2 text-center text-secondary-color">
             <h1 className="text-2xl">{props.name}</h1>
             <span className="max-md:hidden">{props.description}</span>
@@ -112,7 +112,7 @@ export function Icon() {
       />
       <Image
         style={{ width: "208px", height: "208px" }}
-        className="fixed -bottom-16 right-0 -z-50 opacity-50 max-sm:hidden"
+        className="fixed bottom-52 right-[430px] rotate-45 -z-50 opacity-50 max-sm:hidden"
         src="/img/decorative/rocket.svg"
         width={208}
         height={208}
