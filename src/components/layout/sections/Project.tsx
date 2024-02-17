@@ -10,7 +10,7 @@ export default function Project() {
     <Section>
       <Title>Project</Title>
       <div className='flex flex-col gap-10 max-sm:pb-8'>
-        <ProjectViewer name='Pizzeria Donna' description='A landing page designed to resemble a pizzeria, but in reality, it serves as a domestic violence hotline.' href='https://github.com/wilsonsdr/pizzaria-donna' src='/img/project/pizza.jpg' alt='pizza' />
+        <ProjectViewer name='Pizzeria Donna' description='A landing page designed to resemble a pizzeria, but in reality, it serves as a domestic violence hotline.' href='https://github.com/wilsonsdr/pizzeria-donna' src='/img/project/pizza.jpg' alt='pizza' />
         <ProjectViewer name='Chess game' description='A simple chess game as a console application.' href='https://github.com/wilsonsdr/jogo-xadrez' src='/img/project/chess-table.jpg' alt='chess-table'></ProjectViewer>
         <ProjectViewer name='Bikcraft' description='Shop selling customized bicycles and insurance.' href='https://github.com/wilsonsdr/bikcraft' src='/img/project/bike.jpg' alt='bike'></ProjectViewer>
       </div>
