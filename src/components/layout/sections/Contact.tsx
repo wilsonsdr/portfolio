@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <Section>
       <Title>Contact</Title>
-      <P>If you'd like to get in touch or just chat, feel free to contact me. I'm always open to new opportunities and conversations.</P>
+      <P>If you&apos;d like to get in touch or just chat, feel free to contact me. I&apos;m always open to new opportunities and conversations.</P>
       <ul className='flex flex-row gap-5 text-3xl'>
         <SocialMedia href='https://github.com/wilsonsdr'>
           <FaGithubSquare />
