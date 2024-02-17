@@ -15,7 +15,7 @@ export default function Main({ activeSection }: MainProps) {
       {activeSection === "about" && <About />}
       {activeSection === "experience" && <Experience />}
       {activeSection === "education" && <Education />}
-      {activeSection === "projetos" && <Project />}
+      {activeSection === "project" && <Project />}
       {activeSection === "contato" && <Contact />}
     </main>
   );

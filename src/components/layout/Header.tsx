@@ -91,15 +91,15 @@ export default function Header() {
             </li>
             <li>
               <Link
-                onClick={() => handleClick("60", "projetos")}
+                onClick={() => handleClick("60", "project")}
                 className={`inline-block px-4 py-1 max-sm:p-0 ${
-                  activeSection === "projetos"
+                  activeSection === "project"
                     ? "text-body-color max-sm:text-dark-color"
                     : "hover:text-secondary-color max-sm:text-info-color max-sm:hover:text-secondary-color"
                 }`}
                 href="/"
               >
-                projetos
+                project
               </Link>
             </li>
             <li>
