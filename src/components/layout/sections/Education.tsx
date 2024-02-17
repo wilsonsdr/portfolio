@@ -59,13 +59,13 @@ export default function Education() {
         </SkillContainer>
         <SkillContainer name="Cursos" src="/img/decorative/book.svg" alt="book">
           <List>
-            <Item color={Color["primary-color"]}>
+          <Item color={Color["primary-color"]}>
               <Link
                 target="_blank"
                 className="hover:text-highlight-color"
-                href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/"
+                href="https://lp.b7web.com.br/fullstack?utm_source=home"
               >
-                C# Programação Orientada a Objetos
+                Do Zero ao Fullstack
               </Link>
             </Item>
             <Item color={Color["primary-color"]}>
@@ -74,7 +74,7 @@ export default function Education() {
                 className="hover:text-highlight-color"
                 href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/"
               >
-                JavaScript e TypeScript do básico ao avançado
+                C# Programação Orientada a Objetos
               </Link>
             </Item>
             <Item color={Color["primary-color"]}>
